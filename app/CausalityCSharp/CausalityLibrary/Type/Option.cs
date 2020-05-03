@@ -4,21 +4,21 @@ namespace CausalityLibrary.Type
 {
     public sealed class Option
     {
-        public string SerialNumber
+        public SerialNumber SerialNumber
         { get; }
 
         public string Description
         { get; }
 
-        public readonly string[] Actions;
+        public readonly SerialNumber[] Actions;
 
         public bool IsMultiple
         { get; }
 
-        public readonly List<string> ChosenActions = new List<string>();
+        public readonly List<SerialNumber> ChosenActions = new List<SerialNumber>();
 
-        public Option(string serialNumber, string description,
-            string[] actions, bool isMultiple)
+        public Option(SerialNumber serialNumber, string description,
+            SerialNumber[] actions, bool isMultiple)
         {
             SerialNumber = serialNumber;
             Description = description;

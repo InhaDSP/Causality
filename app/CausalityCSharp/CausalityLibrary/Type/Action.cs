@@ -3,7 +3,7 @@ namespace CausalityLibrary.Type
 {
     public sealed class Action
     {
-        public string SerialNumber
+        public SerialNumber SerialNumber
         { get; }
 
         public string Description
@@ -18,7 +18,7 @@ namespace CausalityLibrary.Type
         public bool IsPerformed
         { get; set; }
 
-        public Action(string serialNumber, string description,
+        public Action(SerialNumber serialNumber, string description,
             string actorName, string value, bool isPerformed = false)
         {
             SerialNumber = serialNumber;
@@ -28,7 +28,7 @@ namespace CausalityLibrary.Type
             IsPerformed = isPerformed;
         }
 
-        public Action(string serialNumber, string description,
+        public Action(SerialNumber serialNumber, string description,
             string actorName, bool isPerformed = false)
         {
             SerialNumber = serialNumber;

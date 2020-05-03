@@ -3,7 +3,7 @@ namespace CausalityLibrary.Type
 {
     public class Caption
     {
-        public string SerialNumber
+        public SerialNumber SerialNumber
         { get; }
 
         public string Dialogue
@@ -21,7 +21,7 @@ namespace CausalityLibrary.Type
         public string Option
         { get; }
         
-        public string NextCaption
+        public SerialNumber NextCaption
         { get; }
 
         public bool Displayed
@@ -35,8 +35,8 @@ namespace CausalityLibrary.Type
         /// <param name="speakerName"></param>
         /// <param name="nextCaption"></param>
         /// <param name="displayed"></param>
-        public Caption(string serialNumber, string dialogue,
-            string speakerName, string nextCaption,
+        public Caption(SerialNumber serialNumber, string dialogue,
+            string speakerName, SerialNumber nextCaption,
             bool displayed = false) 
         {
             SerialNumber = serialNumber;
@@ -56,8 +56,8 @@ namespace CausalityLibrary.Type
         /// <param name="displayed"></param>
         /// <param name="cause"></param>
         /// <param name="hasCause"></param>
-        public Caption(string serialNumber, string dialogue,
-            string speakerName, string nextCaption,
+        public Caption(SerialNumber serialNumber, string dialogue,
+            string speakerName, SerialNumber nextCaption,
             bool displayed, string cause, bool hasCause = true)
         {
             SerialNumber = serialNumber;
@@ -78,8 +78,8 @@ namespace CausalityLibrary.Type
         /// <param name="nextCaption"></param>
         /// <param name="displayed"></param>
         /// <param name="option"></param>
-        public Caption(string serialNumber, string dialogue,
-            string speakerName, string nextCaption,
+        public Caption(SerialNumber serialNumber, string dialogue,
+            string speakerName, SerialNumber nextCaption,
             bool displayed, string option)
         {
             SerialNumber = serialNumber;
@@ -100,8 +100,8 @@ namespace CausalityLibrary.Type
         /// <param name="displayed"></param>
         /// <param name="cause"></param>
         /// <param name="option"></param>
-        public Caption(string serialNumber, string dialogue,
-            string speakerName, string nextCaption,
+        public Caption(SerialNumber serialNumber, string dialogue,
+            string speakerName, SerialNumber nextCaption,
             bool displayed, string cause, string option)
         {
             SerialNumber = serialNumber;

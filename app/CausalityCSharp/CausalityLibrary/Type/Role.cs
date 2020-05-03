@@ -3,7 +3,7 @@ namespace CausalityLibrary.Type
 {
     public sealed class Role
     {
-        public string SerialNumber
+        public SerialNumber SerialNumber
         { get; }
 
         public string Description
@@ -15,7 +15,7 @@ namespace CausalityLibrary.Type
         public PositionEnum Position
         { get; }
 
-        public Role(string serialNumber, string description,
+        public Role(SerialNumber serialNumber, string description,
             string name, PositionEnum position)
         {
             SerialNumber = serialNumber;

@@ -15,7 +15,7 @@ namespace CausalityLibrary.Util
             var roleList = new List<Role>();
             foreach (XmlNode roleNode in roleNodes)
             {
-                string serialNumber = string.Empty;
+                SerialNumber serialNumber = null;
                 string name = string.Empty;
                 PositionEnum position = PositionEnum.Extra;
                 string description = string.Empty;
@@ -25,7 +25,7 @@ namespace CausalityLibrary.Util
                     switch (node.Name)
                     {
                         case "SerialNumber":
-                            serialNumber = node.InnerText;
+                            serialNumber = new SerialNumber(node.InnerText);
                             break;
                         case "Name":
                             name = node.InnerText;
@@ -42,6 +42,8 @@ namespace CausalityLibrary.Util
 
                 roleList.Add(role);
             }
+            
+            var valid = Validator.InvalidRoles(roleList);
             return roleList;
         }
 
@@ -52,7 +54,7 @@ namespace CausalityLibrary.Util
             var actionList = new List<Action>();
             foreach (XmlNode actionNode in actionNodes)
             {
-                string serialNumber = string.Empty;
+                SerialNumber serialNumber = null;
                 string description = string.Empty;
                 string value = string.Empty;
                 string actorName = string.Empty;
@@ -63,7 +65,7 @@ namespace CausalityLibrary.Util
                     switch (node.Name)
                     {
                         case "SerialNumber":
-                            serialNumber = node.InnerText;
+                            serialNumber = new SerialNumber(node.InnerText);
                             break;
                         case "Description":
                             description = node.InnerText;
@@ -92,6 +94,10 @@ namespace CausalityLibrary.Util
                     actionList.Add(action);
                 }
             }
+            if (Validator.InvalidActions(actionList))
+            {
+                actionList = null;
+            }
             return actionList;
         }
 
@@ -102,10 +108,10 @@ namespace CausalityLibrary.Util
             var perceptronList = new List<Perceptron>();
             foreach (XmlNode perceptronNode in perceptronNodes)
             {
-                string serialNumber = string.Empty;
+                SerialNumber serialNumber = null;
                 string description = string.Empty;
-                List<string> inputs = new List<string>();
-                List<double> weights = new List<double>();
+                var inputs = new List<SerialNumber>();
+                var weights = new List<double>();
                 double bias = 0;
 
                 foreach (XmlNode node in perceptronNode.ChildNodes)
@@ -113,7 +119,7 @@ namespace CausalityLibrary.Util
                     switch (node.Name)
                     {
                         case "SerialNumber":
-                            serialNumber = node.InnerText;
+                            serialNumber = new SerialNumber(node.InnerText);
                             break;
                         case "Description":
                             description = node.InnerText;
@@ -124,7 +130,7 @@ namespace CausalityLibrary.Util
                         case "Inputs":
                             foreach (XmlNode input in node.ChildNodes)
                             {
-                                inputs.Add(input.InnerText);
+                                inputs.Add(new SerialNumber(input.InnerText));
                             }
                             break;
                         case "Weights":
@@ -141,6 +147,11 @@ namespace CausalityLibrary.Util
 
                 perceptronList.Add(perceptron);
             }
+
+            if(Validator.InvalidPerceptrons(perceptronList))
+            {
+                perceptronList = null;
+            }
             return perceptronList;
         }
 
@@ -151,18 +162,18 @@ namespace CausalityLibrary.Util
             var causeList = new List<Cause>();
             foreach (XmlNode causeNode in causeNodes)
             {
-                string serialNumber = string.Empty;
+                SerialNumber serialNumber = null;
                 string description = string.Empty;
                 string preceptron = string.Empty;
-                List<string> nexts = new List<string>();
-                List<double> thresholds = new List<double>();
+                var nexts = new List<SerialNumber>();
+                var thresholds = new List<double>();
 
                 foreach (XmlNode node in causeNode.ChildNodes)
                 {
                     switch (node.Name)
                     {
                         case "SerialNumber":
-                            serialNumber = node.InnerText;
+                            serialNumber = new SerialNumber(node.InnerText);
                             break;
                         case "Description":
                             description = node.InnerText;
@@ -173,7 +184,7 @@ namespace CausalityLibrary.Util
                         case "Nexts":
                             foreach (XmlNode next in node.ChildNodes)
                             {
-                                nexts.Add(next.InnerText);
+                                nexts.Add(new SerialNumber(next.InnerText));
                             }
                             break;
                         case "Thresholds":
@@ -189,6 +200,10 @@ namespace CausalityLibrary.Util
 
                 causeList.Add(cause);
             }
+            if(Validator.InvalidCauses(causeList))
+            {
+                causeList = null;
+            }
             return causeList;
         }
 
@@ -199,9 +214,9 @@ namespace CausalityLibrary.Util
             var optionList = new List<Option>();
             foreach (XmlNode optionNode in optionNodes)
             {
-                string serialNumber = string.Empty;
+                SerialNumber serialNumber = null;
                 string description = string.Empty;
-                List<string> actions = new List<string>();
+                var actions = new List<SerialNumber>();
                 bool isMultiple = false;
                 //List<string> chosenActions = new List<string>();
 
@@ -210,7 +225,7 @@ namespace CausalityLibrary.Util
                     switch (node.Name)
                     {
                         case "SerialNumber":
-                            serialNumber = node.InnerText;
+                            serialNumber = new SerialNumber(node.InnerText);
                             break;
                         case "Description":
                             description = node.InnerText;
@@ -221,7 +236,7 @@ namespace CausalityLibrary.Util
                         case "Actions":
                             foreach (XmlNode action in node.ChildNodes)
                             {
-                                actions.Add(action.InnerText);
+                                actions.Add(new SerialNumber(action.InnerText));
                             }
                             break;
                         //case "ChosenActions":
@@ -237,6 +252,10 @@ namespace CausalityLibrary.Util
 
                 optionList.Add(option);
             }
+            if (Validator.InvalidOptions(optionList))
+            {
+                optionList = null;
+            }
             return optionList;
         }
 
@@ -247,12 +266,12 @@ namespace CausalityLibrary.Util
             var captionList = new List<Caption>();
             foreach (XmlNode captionNode in captionNodes)
             {
-                string serialNumber = string.Empty;
+                SerialNumber serialNumber = null;
                 string dialogue = string.Empty;
                 string cause = string.Empty;
                 string speakerName = string.Empty;
                 string option = string.Empty;
-                string nextCaption = string.Empty;
+                SerialNumber nextCaption = null;
                 bool displayed = false;
 
                 foreach (XmlNode node in captionNode.ChildNodes)
@@ -260,7 +279,7 @@ namespace CausalityLibrary.Util
                     switch (node.Name)
                     {
                         case "SerialNumber":
-                            serialNumber = node.InnerText;
+                            serialNumber = new SerialNumber(node.InnerText);
                             break;
                         case "Dialogue":
                             dialogue = node.InnerText;
@@ -272,7 +291,7 @@ namespace CausalityLibrary.Util
                             speakerName = node.InnerText;
                             break;
                         case "NextCaption":
-                            nextCaption = node.InnerText;
+                            nextCaption = new SerialNumber(node.InnerText);
                             break;
                         case "Option":
                             option = node.InnerText;
@@ -306,6 +325,10 @@ namespace CausalityLibrary.Util
                     captionList.Add(caption);
                 }
             }
+            if (Validator.InvalidCaptions(captionList))
+            {
+                captionList = null;
+            }
             return captionList;
         }
 
@@ -316,10 +339,10 @@ namespace CausalityLibrary.Util
             var sceneList = new List<Scene>();
             foreach (XmlNode sceneNode in sceneNodes)
             {
-                string serialNumber = string.Empty;
+                SerialNumber serialNumber = null;
                 string description = string.Empty;
-                string caption = string.Empty;
-                string cause = string.Empty;
+                SerialNumber caption = null;
+                SerialNumber cause = null;
                 bool displayed = false;
 
                 foreach (XmlNode node in sceneNode.ChildNodes)
@@ -327,23 +350,23 @@ namespace CausalityLibrary.Util
                     switch (node.Name)
                     {
                         case "SerialNumber":
-                            serialNumber = node.InnerText;
+                            serialNumber = new SerialNumber(node.InnerText);
                             break;
                         case "Description":
                             description = node.InnerText;
                             break;
                         case "Caption":
-                            caption = node.InnerText;
+                            caption = new SerialNumber(node.InnerText);
                             break;
                         case "Cause":
-                            cause = node.InnerText;
+                            cause = new SerialNumber(node.InnerText);
                             break;
                         case "Displayed":
                             displayed = bool.Parse(node.InnerText);
                             break;
                     }
                 }
-                if (cause.Equals(string.Empty))
+                if (cause == null)
                 {
                     var scene = new Scene(
                         serialNumber, description, caption, displayed);
@@ -356,6 +379,10 @@ namespace CausalityLibrary.Util
                     sceneList.Add(scene);
                 }
             }
+            if (Validator.InvalidScenes(sceneList))
+            {
+                sceneList = null;
+            }
             return sceneList;
         }
 
@@ -366,9 +393,9 @@ namespace CausalityLibrary.Util
             var scenarioList = new List<Scenario>();
             foreach (XmlNode scenarioNode in scenarioNodes)
             {
-                string serialNumber = string.Empty;
+                SerialNumber serialNumber = null;
                 string description = string.Empty;
-                List<string> scenes = new List<string>();
+                var scenes = new List<SerialNumber>();
                 bool displayed = false;
 
                 foreach (XmlNode node in scenarioNode.ChildNodes)
@@ -376,7 +403,7 @@ namespace CausalityLibrary.Util
                     switch (node.Name)
                     {
                         case "SerialNumber":
-                            serialNumber = node.InnerText;
+                            serialNumber = new SerialNumber(node.InnerText);
                             break;
                         case "Description":
                             description = node.InnerText;
@@ -387,7 +414,7 @@ namespace CausalityLibrary.Util
                         case "Scenes":
                             foreach (XmlNode scene in node.ChildNodes)
                             {
-                                scenes.Add(scene.InnerText);
+                                scenes.Add(new SerialNumber(scene.InnerText));
                             }
                             break;
                     }
@@ -396,6 +423,10 @@ namespace CausalityLibrary.Util
                     scenes.ToArray(), displayed);
 
                 scenarioList.Add(scenario);
+            }
+            if (Validator.InvalidScenarios(scenarioList))
+            {
+                scenarioList = null;
             }
             return scenarioList;
         }

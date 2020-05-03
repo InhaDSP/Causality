@@ -3,7 +3,7 @@ namespace CausalityLibrary.Type
 {
     public sealed class Cause
     {
-        public string SerialNumber
+        public SerialNumber SerialNumber
         { get; }
 
         public string Description
@@ -12,12 +12,12 @@ namespace CausalityLibrary.Type
         public string Perceptron
         { get; }
 
-        public readonly string[] Next;
+        public readonly SerialNumber[] Next;
         public readonly double[] Thresholds;
 
-        public Cause(string serialNumber,
+        public Cause(SerialNumber serialNumber,
             string description, string perceptron,
-            string[] next, double[] thresholds)
+            SerialNumber[] next, double[] thresholds)
         {
             SerialNumber = serialNumber;
             Description = description;

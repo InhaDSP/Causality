@@ -1,10 +1,8 @@
-﻿using System.Collections.Generic;
-
-namespace CausalityLibrary.Type
+﻿namespace CausalityLibrary.Type
 {
     public sealed class Scenario
     {
-        string SerialNumber
+        public SerialNumber SerialNumber
         { get; }
 
         public string Description
@@ -13,10 +11,10 @@ namespace CausalityLibrary.Type
         public bool Displayed
         { get; set; }
 
-        public readonly string[] Scenes;
+        public readonly SerialNumber[] Scenes;
 
-        public Scenario(string serialNumber, string description,
-             string[] scenes, bool displayed = false)
+        public Scenario(SerialNumber serialNumber, string description,
+             SerialNumber[] scenes, bool displayed = false)
         {
             SerialNumber = serialNumber;
             Description = description;

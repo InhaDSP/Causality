@@ -3,26 +3,26 @@ namespace CausalityLibrary.Type
 {
     public sealed class Scene
     {
-        public string SerialNumber
+        public SerialNumber SerialNumber
         { get; }
 
         public string Description
         { get; }
 
-        public string Caption
+        public SerialNumber Caption
         { get; }
 
         public bool HasCause
         { get; }
 
-        public string Cause
+        public SerialNumber Cause
         { get; }
 
         public bool Displayed
         { get; set; }
 
-        public Scene(string serialNumber,
-            string description, string caption,
+        public Scene(SerialNumber serialNumber,
+            string description, SerialNumber caption,
             bool displayed = false)
         {
             SerialNumber = serialNumber;
@@ -30,9 +30,9 @@ namespace CausalityLibrary.Type
             Caption = caption;
             Displayed = displayed;
         }
-        public Scene(string serialNumber,
-            string description, string caption,
-            string cause, bool displayed = false)
+        public Scene(SerialNumber serialNumber,
+            string description, SerialNumber caption,
+            SerialNumber cause, bool displayed = false)
         {
             SerialNumber = serialNumber;
             Description = description;

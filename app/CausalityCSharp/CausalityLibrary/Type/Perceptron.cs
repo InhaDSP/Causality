@@ -4,20 +4,20 @@ namespace CausalityLibrary.Type
 {
     public sealed class Perceptron
     {
-        public string SerialNumber
+        public SerialNumber SerialNumber
         { get; }
 
         public string Description
         { get; }
 
-        public readonly string[] Inputs;
+        public readonly SerialNumber[] Inputs;
         public readonly double[] Weights;
 
         public double Bias
         { get; }
 
-        public Perceptron(string serialNumber, string description,
-            double bias, string[] inputs, double[] weights)
+        public Perceptron(SerialNumber serialNumber, string description,
+            double bias, SerialNumber[] inputs, double[] weights)
         {
             SerialNumber = serialNumber;
             Description = description;
