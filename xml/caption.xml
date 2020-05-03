@@ -18,7 +18,7 @@
 	</Caption>
 	<Caption>
 	  <SerialNumber>C002</SerialNumber>
-	  <Dialogue>점원: 어서오세요. 주문하시겠어요?</Dialogue>
+	  <Dialogue>어서오세요. 주문하시겠어요?</Dialogue>
 	  <HasCause>false</HasCause>
 	  <SpeakerName>점원</SpeakerName>
 	  <NextCaption>C003</NextCaption>
