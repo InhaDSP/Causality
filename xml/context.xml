@@ -2,8 +2,8 @@
 <Contexts>
 	<Context>
 	  <SerialNumber>D87C6088-F5AC-426A-AF34-99BE0656CD9A</SerialNumber>
-	  <CurrentScenario>E000</CurrentScenario>
-	  <CurrentScene>S000</CurrentScene>
-	  <CurrentCaption>C000</CurrentCaption>
+	  <CurrentScenario>SNR000</CurrentScenario>
+	  <CurrentScene>SNE000</CurrentScene>
+	  <CurrentCaption>CAP000</CurrentCaption>
 	</Context>
 </Contexts>

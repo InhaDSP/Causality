@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Scenes>
 	<Scene>
-	  <SerialNumber>S000</SerialNumber>
+	  <SerialNumber>SNE000</SerialNumber>
 	  <Description>카페(요청) - 주문</Description>
-	  <Caption>C000</Caption>
+	  <Caption>CAP000</Caption>
 	  <HasCause>false</HasCause>
 	  <Displayed>false</Displayed>
 	</Scene>

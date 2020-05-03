@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Perceptrons>
 	<Perceptron>
-	    <SerialNumber>P000</SerialNumber>
+	    <SerialNumber>PER000</SerialNumber>
 	    <Description>커피 사이즈 선택</Description>
 	    <Inputs>
-	        <Input>A006</Input>
-	        <Input>A007</Input>
-	        <Input>A008</Input>
-	        <Input>A009</Input>
+	        <Input>ACT006</Input>
+	        <Input>ACT007</Input>
+	        <Input>ACT008</Input>
+	        <Input>ACT009</Input>
 	    </Inputs>
 	    <Weights>
 	        <Weight>0.5</Weight>
@@ -18,12 +18,12 @@
 	    <Bias>0</Bias>
 	</Perceptron>
 	<Perceptron>
-	    <SerialNumber>P001</SerialNumber>
+	    <SerialNumber>PER001</SerialNumber>
 	    <Description>추가 주문 선택</Description>
 	    <Inputs>
-	        <Input>A012</Input>
-	        <Input>A013</Input>
-	        <Input>A014</Input>
+	        <Input>ACT012</Input>
+	        <Input>ACT013</Input>
+	        <Input>ACT014</Input>
 	    </Inputs>
 	    <Weights>
 	        <Weight>0.3</Weight>
@@ -33,13 +33,13 @@
 	    <Bias>0</Bias>
 	</Perceptron>
 	<Perceptron>
-	    <SerialNumber>P002</SerialNumber>
+	    <SerialNumber>PER002</SerialNumber>
 	    <Description>할인/적립카드 유무</Description>
 	    <Inputs>
-	        <Input>A020</Input>
-	        <Input>A021</Input>
-	        <Input>A022</Input>
-	        <Input>A023</Input>
+	        <Input>ACT020</Input>
+	        <Input>ACT021</Input>
+	        <Input>ACT022</Input>
+	        <Input>ACT023</Input>
 	    </Inputs>
 	    <Weights>
 	        <Weight>0.3</Weight>
@@ -50,11 +50,11 @@
 	    <Bias>0</Bias>
 	</Perceptron>
 	<Perceptron>
-	    <SerialNumber>P003</SerialNumber>
+	    <SerialNumber>PER003</SerialNumber>
 	    <Description>카드 제출/번호 입력 여부</Description>
 	    <Inputs>
-	        <Input>A024</Input>
-	        <Input>A025</Input>
+	        <Input>ACT024</Input>
+	        <Input>ACT025</Input>
 	    </Inputs>
 	    <Weights>
 	        <Weight>0.3</Weight>
@@ -63,13 +63,13 @@
 	    <Bias>0</Bias>
 	</Perceptron>
 	<Perceptron>
-	    <SerialNumber>P002</SerialNumber>
+	    <SerialNumber>PER002</SerialNumber>
 	    <Description>할인/적립카드 문의 후 행동</Description>
 	    <Inputs>
-	        <Input>A026</Input>
-	        <Input>A027</Input>
-	        <Input>A028</Input>
-	        <Input>A029</Input>
+	        <Input>ACT026</Input>
+	        <Input>ACT027</Input>
+	        <Input>ACT028</Input>
+	        <Input>ACT029</Input>
 	    </Inputs>
 	    <Weights>
 	        <Weight>0.3</Weight>
