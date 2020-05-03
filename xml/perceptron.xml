@@ -63,7 +63,7 @@
 	    <Bias>0</Bias>
 	</Perceptron>
 	<Perceptron>
-	    <SerialNumber>PER002</SerialNumber>
+	    <SerialNumber>PER004</SerialNumber>
 	    <Description>할인/적립카드 문의 후 행동</Description>
 	    <Inputs>
 	        <Input>ACT026</Input>
