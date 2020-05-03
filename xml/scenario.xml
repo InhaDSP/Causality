@@ -2,7 +2,7 @@
 <Scenarios>
 	<Scenario>
 	  <SerialNumber>E000</SerialNumber>
-	  <Description>카페(요청) 시나리오<Description>
+	  <Description>카페(요청) 시나리오</Description>
 	  <Scenes>
 	    <Scene>S000</Scene>
 	  </Scenes>
