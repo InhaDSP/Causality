@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Xml;
 using CausalityLibrary.Type;
+using Action = CausalityLibrary.Type.Action;
 
 namespace CausalityLibrary.Util
 {
@@ -405,7 +407,7 @@ namespace CausalityLibrary.Util
             var contextList = new List<Context>();
             foreach (XmlNode contextNode in contextNodes)
             {
-                string serialNumber = string.Empty;
+                Guid guid = Guid.Empty;
                 string currentScenario = string.Empty;
                 string currentScene = string.Empty;
                 string currentCaption = string.Empty;
@@ -414,8 +416,8 @@ namespace CausalityLibrary.Util
                 {
                     switch (node.Name)
                     {
-                        case "SerialNumber":
-                            serialNumber = node.InnerText;
+                        case "GUID":
+                            guid = Guid.Parse(node.InnerText);
                             break;
                         case "CurrentScenario":
                             currentScenario = node.InnerText;
@@ -428,7 +430,7 @@ namespace CausalityLibrary.Util
                             break;
                     }
                 }
-                var context = new Context(serialNumber);
+                var context = new Context(guid);
                 context.CurrentScenario = currentScenario;
                 context.CurrentScene = currentScene;
                 context.CurrentCaption = currentCaption;

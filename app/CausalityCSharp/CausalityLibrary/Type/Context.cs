@@ -1,9 +1,10 @@
-﻿
+﻿using System;
+
 namespace CausalityLibrary.Type
 {
     public sealed class Context
     {
-        public string SerialNumber
+        public Guid GUID
         { get; }
 
         public string CurrentScenario
@@ -15,9 +16,9 @@ namespace CausalityLibrary.Type
         public string CurrentCaption
         { get; set; }
 
-        public Context(string serialNumber)
+        public Context(Guid guid)
         {
-            SerialNumber = serialNumber;
+            GUID = guid;
         }
     }
 }
