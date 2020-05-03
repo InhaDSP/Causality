@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CausalityCLI", "CausalityCLI\CausalityCLI.csproj", "{CF86E7E2-861E-466D-9476-C31D0D4424AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CausalityLibrary", "CausalityLibrary\CausalityLibrary.csproj", "{C17D27B0-E7A5-4614-BB1E-204BADF4B3B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF86E7E2-861E-466D-9476-C31D0D4424AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF86E7E2-861E-466D-9476-C31D0D4424AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF86E7E2-861E-466D-9476-C31D0D4424AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF86E7E2-861E-466D-9476-C31D0D4424AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C17D27B0-E7A5-4614-BB1E-204BADF4B3B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C17D27B0-E7A5-4614-BB1E-204BADF4B3B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C17D27B0-E7A5-4614-BB1E-204BADF4B3B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C17D27B0-E7A5-4614-BB1E-204BADF4B3B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {177077CF-90FA-436C-8045-ABEED406FF16}
+	EndGlobalSection
+EndGlobal
