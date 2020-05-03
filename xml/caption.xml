@@ -89,7 +89,7 @@
 	  <Dialogue>네 알겠습니다. 드시고 가시나요?</Dialogue>
 	  <HasCause>false</HasCause>
 	  <SpeakerName>점원</SpeakerName>
-	  <Option>OPT002</Option>
+	  <Option>OPT003</Option>
 	  <NextCaption>CAP011</NextCaption>
 	  <Displayed>false</Displayed>
 	</Caption>
@@ -106,7 +106,7 @@
 	  <Dialogue>다른 필요한 건 없으신가요?</Dialogue>
 	  <HasCause>false</HasCause>
 	  <SpeakerName>점원</SpeakerName>
-	  <Option>OPT003</Option>
+	  <Option>OPT004</Option>
 	  <NextCaption>CAP013</NextCaption>
 	  <Displayed>false</Displayed>
 	</Caption>
@@ -133,7 +133,7 @@
 	  <Dialogue>디저트 주문하고 싶은데요.</Dialogue>
 	  <HasCause>false</HasCause>
 	  <SpeakerName>김민수</SpeakerName>
-	  <Option>OPT004</Option>
+	  <Option>OPT005</Option>
 	  <NextCaption>CAP016</NextCaption>
 	  <Displayed>false</Displayed>
 	</Caption>
@@ -150,7 +150,7 @@
 	  <Dialogue>디저트는 포장해드릴까요?</Dialogue>
 	  <HasCause>false</HasCause>
 	  <SpeakerName>점원</SpeakerName>
-	  <Option>OPT005</Option>
+	  <Option>OPT006</Option>
 	  <NextCaption>CAP018</NextCaption>
 	  <Displayed>false</Displayed>
 	</Caption>
@@ -176,7 +176,7 @@
 	  <HasCause>false</HasCause>
 	  <SpeakerName>점원</SpeakerName>
 	  <NextCaption>CAP021</NextCaption>
-	  <Option>OPT006</Option>
+	  <Option>OPT007</Option>
 	  <Displayed>false</Displayed>
 	</Caption>
 	<Caption>
@@ -185,7 +185,7 @@
 	  <HasCause>true</HasCause>
 	  <Cause>CAU002</Cause>
 	  <SpeakerName>김민수</SpeakerName>
-	  <Option>OPT007</Option>
+	  <Option>OPT008</Option>
 	  <NextCaption>CAP014</NextCaption>
 	  <Displayed>false</Displayed>
 	</Caption>
@@ -195,7 +195,7 @@
 	  <HasCause>true</HasCause>
 	  <Cause>CAU003</Cause>
 	  <SpeakerName>김민수</SpeakerName>
-	  <NextCaption>CAP035</NextCaption>
+	  <NextCaption>CAP036</NextCaption>
 	  <Displayed>false</Displayed>
 	</Caption>
 	<Caption>
@@ -211,7 +211,7 @@
 	  <Dialogue>네, 앞에 있는 키패드에 번호 눌러주세요.</Dialogue>
 	  <HasCause>false</HasCause>
 	  <SpeakerName>점원</SpeakerName>
-	  <NextCaption>CAP035</NextCaption>
+	  <NextCaption>CAP036</NextCaption>
 	  <Displayed>false</Displayed>
 	</Caption>
 	<Caption>
@@ -219,7 +219,7 @@
 	  <Dialogue>카드는 따로 없어요.</Dialogue>
 	  <HasCause>false</HasCause>
 	  <SpeakerName>김민수</SpeakerName>
-	  <NextCaption>CAP035</NextCaption>
+	  <NextCaption>CAP036</NextCaption>
 	  <Displayed>false</Displayed>
 	</Caption>
 	<Caption>
@@ -236,7 +236,7 @@
 	  <HasCause>false</HasCause>
 	  <SpeakerName>점원</SpeakerName>
 	  <NextCaption>CAP028</NextCaption>
-	  <Option>OPT008</Option>
+	  <Option>OPT009</Option>
 	  <Displayed>false</Displayed>
 	</Caption>
 	<Caption>
@@ -257,56 +257,56 @@
 	  <Displayed>false</Displayed>
 	</Caption>
 	<Caption>
-	  <SerialNumber>CAP029</SerialNumber>
+	  <SerialNumber>CAP030</SerialNumber>
 	  <Dialogue>(당황하며 민수를 보고 슬쩍 웃는다)</Dialogue>
 	  <HasCause>false</HasCause>
 	  <SpeakerName>점원</SpeakerName>
-	  <NextCaption>CAP035</NextCaption>
-	  <Displayed>false</Displayed>
-	</Caption>
-	<Caption>
-	  <SerialNumber>CAP030</SerialNumber>
-	  <Dialogue>(지갑에 있는 카드를 전부 다 꺼내며) 제가 가진 카드는 이게 다인데요, 이 중에 할인되는 것 좀 알려주세요.</Dialogue>
-	  <HasCause>false</HasCause>
-	  <SpeakerName>김민수</SpeakerName>
-	  <NextCaption>CAP031</NextCaption>
+	  <NextCaption>CAP036</NextCaption>
 	  <Displayed>false</Displayed>
 	</Caption>
 	<Caption>
 	  <SerialNumber>CAP031</SerialNumber>
-	  <Dialogue>(당황하며 카드를 하나하나 확인한다)</Dialogue>
+	  <Dialogue>(지갑에 있는 카드를 전부 다 꺼내며) 제가 가진 카드는 이게 다인데요, 이 중에 할인되는 것 좀 알려주세요.</Dialogue>
 	  <HasCause>false</HasCause>
-	  <SpeakerName>점원</SpeakerName>
+	  <SpeakerName>김민수</SpeakerName>
 	  <NextCaption>CAP032</NextCaption>
 	  <Displayed>false</Displayed>
 	</Caption>
 	<Caption>
 	  <SerialNumber>CAP032</SerialNumber>
-	  <Dialogue>아 이 카드 있네요. 이걸로 해주세요.</Dialogue>
+	  <Dialogue>(당황하며 카드를 하나하나 확인한다)</Dialogue>
 	  <HasCause>false</HasCause>
-	  <SpeakerName>김민수</SpeakerName>
-	  <NextCaption>CAP035</NextCaption>
+	  <SpeakerName>점원</SpeakerName>
+	  <NextCaption>CAP033</NextCaption>
 	  <Displayed>false</Displayed>
 	</Caption>
 	<Caption>
 	  <SerialNumber>CAP033</SerialNumber>
-	  <Dialogue>그러면 제가 확인해보고 다시 주문할게요. 뒤에 기다리시는 분부터 주문 받아주세요.</Dialogue>
+	  <Dialogue>아 이 카드 있네요. 이걸로 해주세요.</Dialogue>
 	  <HasCause>false</HasCause>
 	  <SpeakerName>김민수</SpeakerName>
-	  <NextCaption>CAP035</NextCaption>
+	  <NextCaption>CAP036</NextCaption>
 	  <Displayed>false</Displayed>
 	</Caption>
 	<Caption>
 	  <SerialNumber>CAP034</SerialNumber>
+	  <Dialogue>그러면 제가 확인해보고 다시 주문할게요. 뒤에 기다리시는 분부터 주문 받아주세요.</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>김민수</SpeakerName>
+	  <NextCaption>CAP036</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>CAP035</SerialNumber>
 	  <Dialogue>다음번에 확인하고 주문할게요. 그냥 주세요.</Dialogue>
 	  <HasCause>false</HasCause>
 	  <SpeakerName>김민수</SpeakerName>
-	  <NextCaption>CAP035</NextCaption>
+	  <NextCaption>CAP036</NextCaption>
 	  <Displayed>false</Displayed>
 	</Caption>
 
 	<Caption>
-	  <SerialNumber>CAP035</SerialNumber>
+	  <SerialNumber>CAP036</SerialNumber>
 	  <Dialogue>(영수증을 건네주며) 감사합니다. 옆에서 기다려주세요.</Dialogue>
 	  <HasCause>false</HasCause>
 	  <SpeakerName>점원</SpeakerName>

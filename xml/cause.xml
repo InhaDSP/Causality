@@ -60,9 +60,9 @@
 	    <Perceptron>PER004</Perceptron>
 	    <Nexts>
 	        <Next>CAP028</Next> <!-- 모두 확인 - 0.3 -->
-	        <Next>CAP030</Next> <!-- 점원에게 보여줌 - 0.5 -->
-	        <Next>CAP033</Next> <!-- 순서 양보후 찾아봄 - 0.7 -->
-	        <Next>CAP034</Next> <!-- 할인/적립 포기 - 0.9 -->
+	        <Next>CAP031</Next> <!-- 점원에게 보여줌 - 0.5 -->
+	        <Next>CAP034</Next> <!-- 순서 양보후 찾아봄 - 0.7 -->
+	        <Next>CAP035</Next> <!-- 할인/적립 포기 - 0.9 -->
 	    </Nexts>
 	    <Thresholds>
 	        <Threshold>0.4</Threshold>

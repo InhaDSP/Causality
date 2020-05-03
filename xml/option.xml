@@ -32,7 +32,7 @@
 	    <IsMultiple>false</IsMultiple>
 	</Option>
 	<Option>
-	    <SerialNumber>OPT002</SerialNumber>
+	    <SerialNumber>OPT003</SerialNumber>
 	    <Description>포장 여부 선택</Description>
 	    <Actions>
 	        <Action>ACT010</Action>
@@ -41,7 +41,7 @@
 	    <IsMultiple>false</IsMultiple>
 	</Option>
 	<Option>
-	    <SerialNumber>OPT003</SerialNumber>
+	    <SerialNumber>OPT004</SerialNumber>
 	    <Description>추가 주문</Description>
 	    <Actions>
 	        <Action>ACT012</Action>
@@ -51,7 +51,7 @@
 	    <IsMultiple>false</IsMultiple>
 	</Option>
 	<Option>
-	    <SerialNumber>OPT004</SerialNumber>
+	    <SerialNumber>OPT005</SerialNumber>
 	    <Description>디저트 선택</Description>
 	    <Actions>
 	        <Action>ACT015</Action>
@@ -61,7 +61,7 @@
 	    <IsMultiple>false</IsMultiple>
 	</Option>
 	<Option>
-	    <SerialNumber>OPT005</SerialNumber>
+	    <SerialNumber>OPT006</SerialNumber>
 	    <Description>디저트 포장유무</Description>
 	    <Actions>
 	        <Action>ACT018</Action>
@@ -70,7 +70,7 @@
 	    <IsMultiple>false</IsMultiple>
 	</Option>
 	<Option>
-	    <SerialNumber>OPT006</SerialNumber>
+	    <SerialNumber>OPT007</SerialNumber>
 	    <Description>할인/적립카드 유무</Description>
 	    <Actions>
 	        <Action>ACT020</Action>
@@ -81,7 +81,7 @@
 	    <IsMultiple>false</IsMultiple>
 	</Option>
 	<Option>
-	    <SerialNumber>OPT007</SerialNumber>
+	    <SerialNumber>OPT008</SerialNumber>
 	    <Description>카드 제출/번호 입력 여부</Description>
 	    <Actions>
 	        <Action>ACT024</Action>
@@ -90,7 +90,7 @@
 	    <IsMultiple>false</IsMultiple>
 	</Option>
 	<Option>
-	    <SerialNumber>OPT008</SerialNumber>
+	    <SerialNumber>OPT009</SerialNumber>
 	    <Description>할인/적립카드 문의 후 행동</Description>
 	    <Actions>
 	        <Action>ACT026</Action>
