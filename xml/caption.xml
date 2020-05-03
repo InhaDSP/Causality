@@ -1,313 +1,315 @@
-<Caption>
-  <SerialNumber>C000</SerialNumber>
-  <Dialogue>민수는 오늘 복지관에서 진행하는 1회성 요리 프로그램(13시 시작)에 참여하려고 한다. 복지관까지 가는데 30분 정도 걸리기 때문에 여유 있게 12시에 출발해서 가는 길에 카페에 들러 아이스 아메리카노를 사서 들고 갈 예정이다.</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>나레이터</SpeakerName>
-  <NextCaption>C001</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C001</SerialNumber>
-  <Dialogue>점심시간이라 사람이 많은 스타벅스 안, 한참 기다렸다. 여전히 민수 뒤에는 사람들이 많다.</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>나레이터</SpeakerName>
-  <NextCaption>C002</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C002</SerialNumber>
-  <Dialogue>점원: 어서오세요. 주문하시겠어요?</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>점원</SpeakerName>
-  <NextCaption>C003</NextCaption>
-  <Option>O000</Option>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C003</SerialNumber>
-  <Dialogue>{0} 주세요.</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>김민수</SpeakerName>
-  <NextCaption>C004</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C004</SerialNumber>
-  <Dialogue>따뜻한 거 맞으세요?</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>점원</SpeakerName>
-  <NextCaption>C005</NextCaption>
-  <Option>O001</Option>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C005</SerialNumber>
-  <Dialogue>{0} 주세요.</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>김민수</SpeakerName>
-  <NextCaption>C006</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C006</SerialNumber>
-  <Dialogue>사이즈는 어떻게 하시겠어요?</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>점원</SpeakerName>
-  <NextCaption>C007</NextCaption>
-  <Option>O002</Option>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C007</SerialNumber>
-  <Dialogue>{0} 사이즈로 주세요.</Dialogue>
-  <HasCause>true</HasCause>
-  <Cause>U000</Cause>
-  <SpeakerName>김민수</SpeakerName>
-  <NextCaption>C010</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C008</SerialNumber>
-  <Dialogue>사이즈가 어떻게 되나요?</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>김민수</SpeakerName>
-  <NextCaption>C009</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C009</SerialNumber>
-  <Dialogue>옆에 보시면 컵 사이즈 순서대로 Tall, Grande, Venti 입니다.</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>점원</SpeakerName>
-  <NextCaption>C006</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C010</SerialNumber>
-  <Dialogue>네 알겠습니다. 드시고 가시나요?</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>점원</SpeakerName>
-  <Option>O002</Option>
-  <NextCaption>C011</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C011</SerialNumber>
-  <Dialogue>{0}</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>김민수</SpeakerName>
-  <NextCaption>C012</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C012</SerialNumber>
-  <Dialogue>다른 필요한 건 없으신가요?</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>점원</SpeakerName>
-  <Option>O003</Option>
-  <NextCaption>C013</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C013</SerialNumber>
-  <Dialogue>커피를 더 주문하고 싶어요.</Dialogue>
-  <HasCause>true</HasCause>
-  <Cause>U001</Cause>
-  <SpeakerName>김민수</SpeakerName>
-  <NextCaption>C014</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C014</SerialNumber>
-  <Dialogue>어떤 걸로 주문하시겠어요?</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>점원</SpeakerName>
-  <NextCaption>C003</NextCaption>
-  <Option>O000</Option>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C015</SerialNumber>
-  <Dialogue>디저트 주문하고 싶은데요.</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>김민수</SpeakerName>
-  <Option>O004</Option>
-  <NextCaption>C016</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C016</SerialNumber>
-  <Dialogue>{0} 주세요.</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>김민수</SpeakerName>
-  <NextCaption>C017</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C017</SerialNumber>
-  <Dialogue>디저트는 포장해드릴까요?</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>점원</SpeakerName>
-  <Option>O005</Option>
-  <NextCaption>C018</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C018</SerialNumber>
-  <Dialogue>{0}</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>김민수</SpeakerName>
-  <NextCaption>C020</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C019</SerialNumber>
-  <Dialogue>네 없어요.</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>김민수</SpeakerName>
-  <NextCaption>C020</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C020</SerialNumber>
-  <Dialogue>할인이나 적립카드 있으세요?</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>점원</SpeakerName>
-  <NextCaption>C021</NextCaption>
-  <Option>O006</Option>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C021</SerialNumber>
-  <Dialogue>{0} 있어요.</Dialogue>
-  <HasCause>true</HasCause>
-  <Cause>U002</Cause>
-  <SpeakerName>김민수</SpeakerName>
-  <Option>O007</Option>
-  <NextCaption>C014</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C022</SerialNumber>
-  <Dialogue>카드 여기요.</Dialogue>
-  <HasCause>true</HasCause>
-  <Cause>U003</Cause>
-  <SpeakerName>김민수</SpeakerName>
-  <NextCaption>C035</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C023</SerialNumber>
-  <Dialogue>핸드폰 번호 입력할게요.</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>김민수</SpeakerName>
-  <NextCaption>C024</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C024</SerialNumber>
-  <Dialogue>네, 앞에 있는 키패드에 번호 눌러주세요.</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>점원</SpeakerName>
-  <NextCaption>C035</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C025</SerialNumber>
-  <Dialogue>카드는 따로 없어요.</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>김민수</SpeakerName>
-  <NextCaption>C035</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C026</SerialNumber>
-  <Dialogue>혹시 할인, 적립카드는 어떤 게 있나요?</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>김민수</SpeakerName>
-  <NextCaption>C027</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C027</SerialNumber>
-  <Dialogue>(그림을 보여주며) 이 카드 중에 해당하는게 있으면 주세요.</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>점원</SpeakerName>
-  <NextCaption>C028</NextCaption>
-  <Option>O008</Option>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C028</SerialNumber>
-  <Dialogue>(하나하나 지갑에 있는 카드들을 확인해 본다)</Dialogue>
-  <HasCause>true</HasCause>
-  <Cause>U003</Cause>
-  <SpeakerName>김민수</SpeakerName>
-  <NextCaption>C029</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C029</SerialNumber>
-  <Dialogue>(뒤에 줄 선 사람들이 민수를 째려본다)</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>나레이터</SpeakerName>
-  <NextCaption>C030</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C029</SerialNumber>
-  <Dialogue>(당황하며 민수를 보고 슬쩍 웃는다)</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>점원</SpeakerName>
-  <NextCaption>C035</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C030</SerialNumber>
-  <Dialogue>(지갑에 있는 카드를 전부 다 꺼내며) 제가 가진 카드는 이게 다인데요, 이 중에 할인되는 것 좀 알려주세요.</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>김민수</SpeakerName>
-  <NextCaption>C031</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C031</SerialNumber>
-  <Dialogue>(당황하며 카드를 하나하나 확인한다)</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>점원</SpeakerName>
-  <NextCaption>C032</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C032</SerialNumber>
-  <Dialogue>아 이 카드 있네요. 이걸로 해주세요.</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>김민수</SpeakerName>
-  <NextCaption>C035</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C033</SerialNumber>
-  <Dialogue>그러면 제가 확인해보고 다시 주문할게요. 뒤에 기다리시는 분부터 주문 받아주세요.</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>김민수</SpeakerName>
-  <NextCaption>C035</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
-<Caption>
-  <SerialNumber>C034</SerialNumber>
-  <Dialogue>다음번에 확인하고 주문할게요. 그냥 주세요.</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>김민수</SpeakerName>
-  <NextCaption>C035</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
+<Captions>
+	<Caption>
+	  <SerialNumber>C000</SerialNumber>
+	  <Dialogue>민수는 오늘 복지관에서 진행하는 1회성 요리 프로그램(13시 시작)에 참여하려고 한다. 복지관까지 가는데 30분 정도 걸리기 때문에 여유 있게 12시에 출발해서 가는 길에 카페에 들러 아이스 아메리카노를 사서 들고 갈 예정이다.</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>나레이터</SpeakerName>
+	  <NextCaption>C001</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C001</SerialNumber>
+	  <Dialogue>점심시간이라 사람이 많은 스타벅스 안, 한참 기다렸다. 여전히 민수 뒤에는 사람들이 많다.</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>나레이터</SpeakerName>
+	  <NextCaption>C002</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C002</SerialNumber>
+	  <Dialogue>점원: 어서오세요. 주문하시겠어요?</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>점원</SpeakerName>
+	  <NextCaption>C003</NextCaption>
+	  <Option>O000</Option>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C003</SerialNumber>
+	  <Dialogue>{0} 주세요.</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>김민수</SpeakerName>
+	  <NextCaption>C004</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C004</SerialNumber>
+	  <Dialogue>따뜻한 거 맞으세요?</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>점원</SpeakerName>
+	  <NextCaption>C005</NextCaption>
+	  <Option>O001</Option>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C005</SerialNumber>
+	  <Dialogue>{0} 주세요.</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>김민수</SpeakerName>
+	  <NextCaption>C006</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C006</SerialNumber>
+	  <Dialogue>사이즈는 어떻게 하시겠어요?</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>점원</SpeakerName>
+	  <NextCaption>C007</NextCaption>
+	  <Option>O002</Option>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C007</SerialNumber>
+	  <Dialogue>{0} 사이즈로 주세요.</Dialogue>
+	  <HasCause>true</HasCause>
+	  <Cause>U000</Cause>
+	  <SpeakerName>김민수</SpeakerName>
+	  <NextCaption>C010</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C008</SerialNumber>
+	  <Dialogue>사이즈가 어떻게 되나요?</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>김민수</SpeakerName>
+	  <NextCaption>C009</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C009</SerialNumber>
+	  <Dialogue>옆에 보시면 컵 사이즈 순서대로 Tall, Grande, Venti 입니다.</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>점원</SpeakerName>
+	  <NextCaption>C006</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C010</SerialNumber>
+	  <Dialogue>네 알겠습니다. 드시고 가시나요?</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>점원</SpeakerName>
+	  <Option>O002</Option>
+	  <NextCaption>C011</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C011</SerialNumber>
+	  <Dialogue>{0}</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>김민수</SpeakerName>
+	  <NextCaption>C012</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C012</SerialNumber>
+	  <Dialogue>다른 필요한 건 없으신가요?</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>점원</SpeakerName>
+	  <Option>O003</Option>
+	  <NextCaption>C013</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C013</SerialNumber>
+	  <Dialogue>커피를 더 주문하고 싶어요.</Dialogue>
+	  <HasCause>true</HasCause>
+	  <Cause>U001</Cause>
+	  <SpeakerName>김민수</SpeakerName>
+	  <NextCaption>C014</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C014</SerialNumber>
+	  <Dialogue>어떤 걸로 주문하시겠어요?</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>점원</SpeakerName>
+	  <NextCaption>C003</NextCaption>
+	  <Option>O000</Option>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C015</SerialNumber>
+	  <Dialogue>디저트 주문하고 싶은데요.</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>김민수</SpeakerName>
+	  <Option>O004</Option>
+	  <NextCaption>C016</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C016</SerialNumber>
+	  <Dialogue>{0} 주세요.</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>김민수</SpeakerName>
+	  <NextCaption>C017</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C017</SerialNumber>
+	  <Dialogue>디저트는 포장해드릴까요?</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>점원</SpeakerName>
+	  <Option>O005</Option>
+	  <NextCaption>C018</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C018</SerialNumber>
+	  <Dialogue>{0}</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>김민수</SpeakerName>
+	  <NextCaption>C020</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C019</SerialNumber>
+	  <Dialogue>네 없어요.</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>김민수</SpeakerName>
+	  <NextCaption>C020</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C020</SerialNumber>
+	  <Dialogue>할인이나 적립카드 있으세요?</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>점원</SpeakerName>
+	  <NextCaption>C021</NextCaption>
+	  <Option>O006</Option>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C021</SerialNumber>
+	  <Dialogue>{0} 있어요.</Dialogue>
+	  <HasCause>true</HasCause>
+	  <Cause>U002</Cause>
+	  <SpeakerName>김민수</SpeakerName>
+	  <Option>O007</Option>
+	  <NextCaption>C014</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C022</SerialNumber>
+	  <Dialogue>카드 여기요.</Dialogue>
+	  <HasCause>true</HasCause>
+	  <Cause>U003</Cause>
+	  <SpeakerName>김민수</SpeakerName>
+	  <NextCaption>C035</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C023</SerialNumber>
+	  <Dialogue>핸드폰 번호 입력할게요.</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>김민수</SpeakerName>
+	  <NextCaption>C024</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C024</SerialNumber>
+	  <Dialogue>네, 앞에 있는 키패드에 번호 눌러주세요.</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>점원</SpeakerName>
+	  <NextCaption>C035</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C025</SerialNumber>
+	  <Dialogue>카드는 따로 없어요.</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>김민수</SpeakerName>
+	  <NextCaption>C035</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C026</SerialNumber>
+	  <Dialogue>혹시 할인, 적립카드는 어떤 게 있나요?</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>김민수</SpeakerName>
+	  <NextCaption>C027</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C027</SerialNumber>
+	  <Dialogue>(그림을 보여주며) 이 카드 중에 해당하는게 있으면 주세요.</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>점원</SpeakerName>
+	  <NextCaption>C028</NextCaption>
+	  <Option>O008</Option>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C028</SerialNumber>
+	  <Dialogue>(하나하나 지갑에 있는 카드들을 확인해 본다)</Dialogue>
+	  <HasCause>true</HasCause>
+	  <Cause>U003</Cause>
+	  <SpeakerName>김민수</SpeakerName>
+	  <NextCaption>C029</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C029</SerialNumber>
+	  <Dialogue>(뒤에 줄 선 사람들이 민수를 째려본다)</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>나레이터</SpeakerName>
+	  <NextCaption>C030</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C029</SerialNumber>
+	  <Dialogue>(당황하며 민수를 보고 슬쩍 웃는다)</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>점원</SpeakerName>
+	  <NextCaption>C035</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C030</SerialNumber>
+	  <Dialogue>(지갑에 있는 카드를 전부 다 꺼내며) 제가 가진 카드는 이게 다인데요, 이 중에 할인되는 것 좀 알려주세요.</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>김민수</SpeakerName>
+	  <NextCaption>C031</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C031</SerialNumber>
+	  <Dialogue>(당황하며 카드를 하나하나 확인한다)</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>점원</SpeakerName>
+	  <NextCaption>C032</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C032</SerialNumber>
+	  <Dialogue>아 이 카드 있네요. 이걸로 해주세요.</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>김민수</SpeakerName>
+	  <NextCaption>C035</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C033</SerialNumber>
+	  <Dialogue>그러면 제가 확인해보고 다시 주문할게요. 뒤에 기다리시는 분부터 주문 받아주세요.</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>김민수</SpeakerName>
+	  <NextCaption>C035</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+	<Caption>
+	  <SerialNumber>C034</SerialNumber>
+	  <Dialogue>다음번에 확인하고 주문할게요. 그냥 주세요.</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>김민수</SpeakerName>
+	  <NextCaption>C035</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
 
-<Caption>
-  <SerialNumber>C035</SerialNumber>
-  <Dialogue>(영수증을 건네주며) 감사합니다. 옆에서 기다려주세요.</Dialogue>
-  <HasCause>false</HasCause>
-  <SpeakerName>점원</SpeakerName>
-  <NextCaption>END</NextCaption>
-  <Displayed>false</Displayed>
-</Caption>
+	<Caption>
+	  <SerialNumber>C035</SerialNumber>
+	  <Dialogue>(영수증을 건네주며) 감사합니다. 옆에서 기다려주세요.</Dialogue>
+	  <HasCause>false</HasCause>
+	  <SpeakerName>점원</SpeakerName>
+	  <NextCaption>END</NextCaption>
+	  <Displayed>false</Displayed>
+	</Caption>
+</Captions>

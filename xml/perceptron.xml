@@ -1,79 +1,81 @@
-<Perceptron>
-    <SerialNumber>P000</SerialNumber>
-    <Description>커피 사이즈 선택</Description>
-    <Inputs>
-        <Input>A006</Input>
-        <Input>A007</Input>
-        <Input>A008</Input>
-        <Input>A009</Input>
-    </Inputs>
-    <Weights>
-        <Weight>0.5</Weight>
-        <Weight>0.5</Weight>
-        <Weight>0.5</Weight>
-        <Weight>0.0</Weight>
-    </Weights>
-    <Bias>0</Bias>
-</Perceptron>
-<Perceptron>
-    <SerialNumber>P001</SerialNumber>
-    <Description>추가 주문 선택</Description>
-    <Inputs>
-        <Input>A012</Input>
-        <Input>A013</Input>
-        <Input>A014</Input>
-    </Inputs>
-    <Weights>
-        <Weight>0.3</Weight>
-        <Weight>0.5</Weight>
-        <Weight>0.7</Weight>
-    </Weights>
-    <Bias>0</Bias>
-</Perceptron>
-<Perceptron>
-    <SerialNumber>P002</SerialNumber>
-    <Description>할인/적립카드 유무</Description>
-    <Inputs>
-        <Input>A020</Input>
-        <Input>A021</Input>
-        <Input>A022</Input>
-        <Input>A023</Input>
-    </Inputs>
-    <Weights>
-        <Weight>0.3</Weight>
-        <Weight>0.5</Weight>
-        <Weight>0.7</Weight>
-        <Weight>0.9</Weight>
-    </Weights>
-    <Bias>0</Bias>
-</Perceptron>
-<Perceptron>
-    <SerialNumber>P003</SerialNumber>
-    <Description>카드 제출/번호 입력 여부</Description>
-    <Inputs>
-        <Input>A024</Input>
-        <Input>A025</Input>
-    </Inputs>
-    <Weights>
-        <Weight>0.3</Weight>
-        <Weight>0.5</Weight>
-    </Weights>
-    <Bias>0</Bias>
-</Perceptron>
-<Perceptron>
-    <SerialNumber>P002</SerialNumber>
-    <Description>할인/적립카드 문의 후 행동</Description>
-    <Inputs>
-        <Input>A026</Input>
-        <Input>A027</Input>
-        <Input>A028</Input>
-        <Input>A029</Input>
-    </Inputs>
-    <Weights>
-        <Weight>0.3</Weight>
-        <Weight>0.5</Weight>
-        <Weight>0.7</Weight>
-        <Weight>0.9</Weight>
-    </Weights>
-    <Bias>0</Bias>
-</Perceptron>
+<Perceptrons>
+	<Perceptron>
+	    <SerialNumber>P000</SerialNumber>
+	    <Description>커피 사이즈 선택</Description>
+	    <Inputs>
+	        <Input>A006</Input>
+	        <Input>A007</Input>
+	        <Input>A008</Input>
+	        <Input>A009</Input>
+	    </Inputs>
+	    <Weights>
+	        <Weight>0.5</Weight>
+	        <Weight>0.5</Weight>
+	        <Weight>0.5</Weight>
+	        <Weight>0.0</Weight>
+	    </Weights>
+	    <Bias>0</Bias>
+	</Perceptron>
+	<Perceptron>
+	    <SerialNumber>P001</SerialNumber>
+	    <Description>추가 주문 선택</Description>
+	    <Inputs>
+	        <Input>A012</Input>
+	        <Input>A013</Input>
+	        <Input>A014</Input>
+	    </Inputs>
+	    <Weights>
+	        <Weight>0.3</Weight>
+	        <Weight>0.5</Weight>
+	        <Weight>0.7</Weight>
+	    </Weights>
+	    <Bias>0</Bias>
+	</Perceptron>
+	<Perceptron>
+	    <SerialNumber>P002</SerialNumber>
+	    <Description>할인/적립카드 유무</Description>
+	    <Inputs>
+	        <Input>A020</Input>
+	        <Input>A021</Input>
+	        <Input>A022</Input>
+	        <Input>A023</Input>
+	    </Inputs>
+	    <Weights>
+	        <Weight>0.3</Weight>
+	        <Weight>0.5</Weight>
+	        <Weight>0.7</Weight>
+	        <Weight>0.9</Weight>
+	    </Weights>
+	    <Bias>0</Bias>
+	</Perceptron>
+	<Perceptron>
+	    <SerialNumber>P003</SerialNumber>
+	    <Description>카드 제출/번호 입력 여부</Description>
+	    <Inputs>
+	        <Input>A024</Input>
+	        <Input>A025</Input>
+	    </Inputs>
+	    <Weights>
+	        <Weight>0.3</Weight>
+	        <Weight>0.5</Weight>
+	    </Weights>
+	    <Bias>0</Bias>
+	</Perceptron>
+	<Perceptron>
+	    <SerialNumber>P002</SerialNumber>
+	    <Description>할인/적립카드 문의 후 행동</Description>
+	    <Inputs>
+	        <Input>A026</Input>
+	        <Input>A027</Input>
+	        <Input>A028</Input>
+	        <Input>A029</Input>
+	    </Inputs>
+	    <Weights>
+	        <Weight>0.3</Weight>
+	        <Weight>0.5</Weight>
+	        <Weight>0.7</Weight>
+	        <Weight>0.9</Weight>
+	    </Weights>
+	    <Bias>0</Bias>
+	</Perceptron>
+</Perceptrons>

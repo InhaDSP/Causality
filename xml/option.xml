@@ -1,100 +1,102 @@
-<Option>
-    <SerialNumber>O000</SerialNumber>
-    <Description>커피 메뉴 선택</Description>
-    <Actions>
-        <Action>A000</Action> <!-- 커피-아메리카노 선택 -->
-        <Action>A001</Action> <!-- 커피-카페라떼 선택 -->
-        <Action>A002</Action> <!-- 커피-녹차 선택 -->
-        <Action>A003</Action> <!-- 커피-초코라떼 선택 -->
-    </Actions>
-    <IsMultiple>false</IsMultiple>
-</Option>
-<Option>
-    <SerialNumber>O001</SerialNumber>
-    <Description>커피 온도 선택</Description>
-    <Actions>
-        <Action>A004</Action>
-        <Action>A005</Action>
-    </Actions>
-    <IsMultiple>false</IsMultiple>
-</Option>
-<Option>
-    <SerialNumber>O002</SerialNumber>
-    <Description>커피 사이즈 선택</Description>
-    <Actions>
-        <Action>A006</Action>
-        <Action>A007</Action>
-        <Action>A008</Action>
-        <Action>A009</Action>
-    </Actions>
-    <IsMultiple>false</IsMultiple>
-</Option>
-<Option>
-    <SerialNumber>O002</SerialNumber>
-    <Description>포장 여부 선택</Description>
-    <Actions>
-        <Action>A010</Action>
-        <Action>A011</Action>
-    </Actions>
-    <IsMultiple>false</IsMultiple>
-</Option>
-<Option>
-    <SerialNumber>O003</SerialNumber>
-    <Description>추가 주문</Description>
-    <Actions>
-        <Action>A012</Action>
-        <Action>A013</Action>
-        <Action>A014</Action>
-    </Actions>
-    <IsMultiple>false</IsMultiple>
-</Option>
-<Option>
-    <SerialNumber>O004</SerialNumber>
-    <Description>디저트 선택</Description>
-    <Actions>
-        <Action>A015</Action>
-        <Action>A016</Action>
-        <Action>A017</Action>
-    </Actions>
-    <IsMultiple>false</IsMultiple>
-</Option>
-<Option>
-    <SerialNumber>O005</SerialNumber>
-    <Description>디저트 포장유무</Description>
-    <Actions>
-        <Action>A018</Action>
-        <Action>A019</Action>
-    </Actions>
-    <IsMultiple>false</IsMultiple>
-</Option>
-<Option>
-    <SerialNumber>O006</SerialNumber>
-    <Description>할인/적립카드 유무</Description>
-    <Actions>
-        <Action>A020</Action>
-        <Action>A021</Action>
-        <Action>A022</Action>
-        <Action>A023</Action>
-    </Actions>
-    <IsMultiple>false</IsMultiple>
-</Option>
-<Option>
-    <SerialNumber>O007</SerialNumber>
-    <Description>카드 제출/번호 입력 여부</Description>
-    <Actions>
-        <Action>A024</Action>
-        <Action>A025</Action>
-    </Actions>
-    <IsMultiple>false</IsMultiple>
-</Option>
-<Option>
-    <SerialNumber>O008</SerialNumber>
-    <Description>할인/적립카드 문의 후 행동</Description>
-    <Actions>
-        <Action>A026</Action>
-        <Action>A027</Action>
-        <Action>A028</Action>
-        <Action>A029</Action>
-    </Actions>
-    <IsMultiple>false</IsMultiple>
-</Option>
+<Options>
+	<Option>
+	    <SerialNumber>O000</SerialNumber>
+	    <Description>커피 메뉴 선택</Description>
+	    <Actions>
+	        <Action>A000</Action> <!-- 커피-아메리카노 선택 -->
+	        <Action>A001</Action> <!-- 커피-카페라떼 선택 -->
+	        <Action>A002</Action> <!-- 커피-녹차 선택 -->
+	        <Action>A003</Action> <!-- 커피-초코라떼 선택 -->
+	    </Actions>
+	    <IsMultiple>false</IsMultiple>
+	</Option>
+	<Option>
+	    <SerialNumber>O001</SerialNumber>
+	    <Description>커피 온도 선택</Description>
+	    <Actions>
+	        <Action>A004</Action>
+	        <Action>A005</Action>
+	    </Actions>
+	    <IsMultiple>false</IsMultiple>
+	</Option>
+	<Option>
+	    <SerialNumber>O002</SerialNumber>
+	    <Description>커피 사이즈 선택</Description>
+	    <Actions>
+	        <Action>A006</Action>
+	        <Action>A007</Action>
+	        <Action>A008</Action>
+	        <Action>A009</Action>
+	    </Actions>
+	    <IsMultiple>false</IsMultiple>
+	</Option>
+	<Option>
+	    <SerialNumber>O002</SerialNumber>
+	    <Description>포장 여부 선택</Description>
+	    <Actions>
+	        <Action>A010</Action>
+	        <Action>A011</Action>
+	    </Actions>
+	    <IsMultiple>false</IsMultiple>
+	</Option>
+	<Option>
+	    <SerialNumber>O003</SerialNumber>
+	    <Description>추가 주문</Description>
+	    <Actions>
+	        <Action>A012</Action>
+	        <Action>A013</Action>
+	        <Action>A014</Action>
+	    </Actions>
+	    <IsMultiple>false</IsMultiple>
+	</Option>
+	<Option>
+	    <SerialNumber>O004</SerialNumber>
+	    <Description>디저트 선택</Description>
+	    <Actions>
+	        <Action>A015</Action>
+	        <Action>A016</Action>
+	        <Action>A017</Action>
+	    </Actions>
+	    <IsMultiple>false</IsMultiple>
+	</Option>
+	<Option>
+	    <SerialNumber>O005</SerialNumber>
+	    <Description>디저트 포장유무</Description>
+	    <Actions>
+	        <Action>A018</Action>
+	        <Action>A019</Action>
+	    </Actions>
+	    <IsMultiple>false</IsMultiple>
+	</Option>
+	<Option>
+	    <SerialNumber>O006</SerialNumber>
+	    <Description>할인/적립카드 유무</Description>
+	    <Actions>
+	        <Action>A020</Action>
+	        <Action>A021</Action>
+	        <Action>A022</Action>
+	        <Action>A023</Action>
+	    </Actions>
+	    <IsMultiple>false</IsMultiple>
+	</Option>
+	<Option>
+	    <SerialNumber>O007</SerialNumber>
+	    <Description>카드 제출/번호 입력 여부</Description>
+	    <Actions>
+	        <Action>A024</Action>
+	        <Action>A025</Action>
+	    </Actions>
+	    <IsMultiple>false</IsMultiple>
+	</Option>
+	<Option>
+	    <SerialNumber>O008</SerialNumber>
+	    <Description>할인/적립카드 문의 후 행동</Description>
+	    <Actions>
+	        <Action>A026</Action>
+	        <Action>A027</Action>
+	        <Action>A028</Action>
+	        <Action>A029</Action>
+	    </Actions>
+	    <IsMultiple>false</IsMultiple>
+	</Option>
+</Options>

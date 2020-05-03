@@ -1,70 +1,72 @@
-<Cause>
-    <SerialNumber>U000</SerialNumber>
-    <Description>사이즈 선택여부</Description>
-    <Perceptron>P000</Perceptron>
-    <Nexts>
-        <Next>C008</Next> <!-- 사이즈 물어보기 -->
-        <Next>C007</Next> <!-- 사이즈 말함 -->
-    </Nexts>
-    <Thresholds>
-        <Threshold>0.5</Threshold>
-    </Thresholds>
-</Cause>
-<Cause>
-    <SerialNumber>U001</SerialNumber>
-    <Description>추가 주문 여부</Description>
-    <Perceptron>P001</Perceptron>
-    <Nexts>
-        <Next>C013</Next> <!-- 커피 주문 - 0.3 -->
-        <Next>C015</Next> <!-- 디저트 주문 - 0.5 -->
-        <Next>C019</Next> <!-- 주문 마무리 - 0.7 -->
-    </Nexts>
-    <Thresholds>
-        <Threshold>0.4</Threshold>
-        <Threshold>0.6</Threshold>
-    </Thresholds>
-</Cause>
-<Cause>
-    <SerialNumber>U002</SerialNumber>
-    <Description>할인/적립카드 유무</Description>
-    <Perceptron>P002</Perceptron>
-    <Nexts>
-        <Next>C021</Next> <!-- 할인카드 - 0.3 -->
-        <Next>C021</Next> <!-- 적립카드 - 0.5 -->
-        <Next>C025</Next> <!-- 카드 없음 - 0.7 -->
-        <Next>C026</Next> <!-- 직원에게 문의 - 0.9 -->
-    </Nexts>
-    <Thresholds>
-        <Threshold>0.4</Threshold>
-        <Threshold>0.6</Threshold>
-        <Threshold>0.8</Threshold>
-    </Thresholds>
-</Cause>
-<Cause>
-    <SerialNumber>U003</SerialNumber>
-    <Description>카드 제출/번호 입력 여부</Description>
-    <Perceptron>P003</Perceptron>
-    <Nexts>
-        <Next>C022</Next> <!-- 카드 직접 제시 - 0.3 -->
-        <Next>C023</Next> <!-- 핸드폰 번호 입력 - 0.5 -->
-    </Nexts>
-    <Thresholds>
-        <Threshold>0.5</Threshold>
-    </Thresholds>
-</Cause>
-<Cause>
-    <SerialNumber>U004</SerialNumber>
-    <Description>할인/적립카드 문의 후 행동</Description>
-    <Perceptron>P004</Perceptron>
-    <Nexts>
-        <Next>C028</Next> <!-- 모두 확인 - 0.3 -->
-        <Next>C030</Next> <!-- 점원에게 보여줌 - 0.5 -->
-        <Next>C033</Next> <!-- 순서 양보후 찾아봄 - 0.7 -->
-        <Next>C034</Next> <!-- 할인/적립 포기 - 0.9 -->
-    </Nexts>
-    <Thresholds>
-        <Threshold>0.4</Threshold>
-        <Threshold>0.6</Threshold>
-        <Threshold>0.8</Threshold>
-    </Thresholds>
-</Cause>
+<Causes>
+	<Cause>
+	    <SerialNumber>U000</SerialNumber>
+	    <Description>사이즈 선택여부</Description>
+	    <Perceptron>P000</Perceptron>
+	    <Nexts>
+	        <Next>C008</Next> <!-- 사이즈 물어보기 -->
+	        <Next>C007</Next> <!-- 사이즈 말함 -->
+	    </Nexts>
+	    <Thresholds>
+	        <Threshold>0.5</Threshold>
+	    </Thresholds>
+	</Cause>
+	<Cause>
+	    <SerialNumber>U001</SerialNumber>
+	    <Description>추가 주문 여부</Description>
+	    <Perceptron>P001</Perceptron>
+	    <Nexts>
+	        <Next>C013</Next> <!-- 커피 주문 - 0.3 -->
+	        <Next>C015</Next> <!-- 디저트 주문 - 0.5 -->
+	        <Next>C019</Next> <!-- 주문 마무리 - 0.7 -->
+	    </Nexts>
+	    <Thresholds>
+	        <Threshold>0.4</Threshold>
+	        <Threshold>0.6</Threshold>
+	    </Thresholds>
+	</Cause>
+	<Cause>
+	    <SerialNumber>U002</SerialNumber>
+	    <Description>할인/적립카드 유무</Description>
+	    <Perceptron>P002</Perceptron>
+	    <Nexts>
+	        <Next>C021</Next> <!-- 할인카드 - 0.3 -->
+	        <Next>C021</Next> <!-- 적립카드 - 0.5 -->
+	        <Next>C025</Next> <!-- 카드 없음 - 0.7 -->
+	        <Next>C026</Next> <!-- 직원에게 문의 - 0.9 -->
+	    </Nexts>
+	    <Thresholds>
+	        <Threshold>0.4</Threshold>
+	        <Threshold>0.6</Threshold>
+	        <Threshold>0.8</Threshold>
+	    </Thresholds>
+	</Cause>
+	<Cause>
+	    <SerialNumber>U003</SerialNumber>
+	    <Description>카드 제출/번호 입력 여부</Description>
+	    <Perceptron>P003</Perceptron>
+	    <Nexts>
+	        <Next>C022</Next> <!-- 카드 직접 제시 - 0.3 -->
+	        <Next>C023</Next> <!-- 핸드폰 번호 입력 - 0.5 -->
+	    </Nexts>
+	    <Thresholds>
+	        <Threshold>0.5</Threshold>
+	    </Thresholds>
+	</Cause>
+	<Cause>
+	    <SerialNumber>U004</SerialNumber>
+	    <Description>할인/적립카드 문의 후 행동</Description>
+	    <Perceptron>P004</Perceptron>
+	    <Nexts>
+	        <Next>C028</Next> <!-- 모두 확인 - 0.3 -->
+	        <Next>C030</Next> <!-- 점원에게 보여줌 - 0.5 -->
+	        <Next>C033</Next> <!-- 순서 양보후 찾아봄 - 0.7 -->
+	        <Next>C034</Next> <!-- 할인/적립 포기 - 0.9 -->
+	    </Nexts>
+	    <Thresholds>
+	        <Threshold>0.4</Threshold>
+	        <Threshold>0.6</Threshold>
+	        <Threshold>0.8</Threshold>
+	    </Thresholds>
+	</Cause>
+</Causes>

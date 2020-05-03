@@ -1,18 +1,20 @@
-<Role>
-  <SerialNumber>R000</SerialNumber>
-  <Name>나레이터</Name>
-  <Position>Narrator</Position>
-  <Description>해설 캡션을 담당</Description>
-</Role>
-<Role>
-  <SerialNumber>R001</SerialNumber>
-  <Name>김민수</Name>
-  <Position>Leader</Position>
-<Description>시나리오 주인공</Description>
-</Role>
-<Role>
-  <SerialNumber>R002</SerialNumber>
-  <Name>점원</Name>
-  <Position>Supporter</Position>
-<Description>카페 점원</Description>
-</Role>
+<Roles>
+	<Role>
+	  <SerialNumber>R000</SerialNumber>
+	  <Name>나레이터</Name>
+	  <Position>Narrator</Position>
+	  <Description>해설 캡션을 담당</Description>
+	</Role>
+	<Role>
+	  <SerialNumber>R001</SerialNumber>
+	  <Name>김민수</Name>
+	  <Position>Leader</Position>
+	<Description>시나리오 주인공</Description>
+	</Role>
+	<Role>
+	  <SerialNumber>R002</SerialNumber>
+	  <Name>점원</Name>
+	  <Position>Supporter</Position>
+	<Description>카페 점원</Description>
+	</Role>
+</Roles>

@@ -1,198 +1,200 @@
-<Action>
-    <SerialNumber>A000</SerialNumber>
-    <Description>커피-아메리카노 선택</Description>
-    <Value>아메리카노</Value>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A001</SerialNumber>
-    <Description>커피-카페라떼 선택</Description>
-    <Value>카페라떼</Value>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A002</SerialNumber>
-    <Description>커피-녹차 선택</Description>
-    <Value>녹차</Value>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A003</SerialNumber>
-    <Description>커피-초코라떼 선택</Description>
-    <Value>초코라떼</Value>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A004</SerialNumber>
-    <Description>커피-온도 차갑게</Description>
-    <Value>차갑게</Value>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A005</SerialNumber>
-    <Description>커피-온도 따뜻하게</Description>
-    <Value>따뜻하게</Value>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A006</SerialNumber>
-    <Description>커피-크기 Tall</Description>
-    <Value>Tall</Value>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A007</SerialNumber>
-    <Description>커피-크기 Grande</Description>
-    <Value>Grande</Value>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A008</SerialNumber>
-    <Description>커피-크기 Venti</Description>
-    <Value>Venti</Value>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A009</SerialNumber>
-    <Description>커피-크기 직원에게 문의</Description>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A010</SerialNumber>
-    <Description>커피를 매장에서 마신다</Description>
-    <Value>매장에서 마실게요.</Value>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A011</SerialNumber>
-    <Description>커피를 포장한다</Description>
-    <Value>포장해주세요.</Value>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A012</SerialNumber>
-    <Description>음료 추가 주문</Description>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A013</SerialNumber>
-    <Description>디저트 주문</Description>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A014</SerialNumber>
-    <Description>주문 마무리</Description>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A015</SerialNumber>
-    <Description>마카롱 주문</Description>
-    <Value>마카롱</Value>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A016</SerialNumber>
-    <Description>케이크 주문</Description>
-    <Value>케이크</Value>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A017</SerialNumber>
-    <Description>쿠키 주문</Description>
-    <Value>쿠키</Value>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A018</SerialNumber>
-    <Description>디저트를 매장에서 먹는다</Description>
-    <Value>먹고 갈게요.</Value>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A019</SerialNumber>
-    <Description>디저트를 포장한다</Description>
-    <Value>포장해주세요.</Value>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A020</SerialNumber>
-    <Description>할인카드 있음</Description>
-    <Value>할인카드</Value>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A021</SerialNumber>
-    <Description>적립카드 있음</Description>
-    <Value>적립카드</Value>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A022</SerialNumber>
-    <Description>할인/적립카드 없음</Description>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A023</SerialNumber>
-    <Description>직원에게 할인/적립카드 문의</Description>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A024</SerialNumber>
-    <Description>할인/적립카드 직접 제시</Description>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A025</SerialNumber>
-    <Description>핸드폰 번호 입력</Description>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A026</SerialNumber>
-    <Description>지갑에 있는 카드를 하나하나 확인하기</Description>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A027</SerialNumber>
-    <Description>직원에게 지갑에 있는 카드 다 보여 주기</Description>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A028</SerialNumber>
-    <Description>다른 손님께 순서를 양보한 뒤에 찾아보기</Description>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
-<Action>
-    <SerialNumber>A029</SerialNumber>
-    <Description>할인 또는 적립받지 않기</Description>
-    <ActorName>김민수</ActorName>
-    <IsPerformed>false</IsPerformed>
-</Action>
+<Actions>
+	<Action>
+	    <SerialNumber>A000</SerialNumber>
+	    <Description>커피-아메리카노 선택</Description>
+	    <Value>아메리카노</Value>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A001</SerialNumber>
+	    <Description>커피-카페라떼 선택</Description>
+	    <Value>카페라떼</Value>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A002</SerialNumber>
+	    <Description>커피-녹차 선택</Description>
+	    <Value>녹차</Value>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A003</SerialNumber>
+	    <Description>커피-초코라떼 선택</Description>
+	    <Value>초코라떼</Value>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A004</SerialNumber>
+	    <Description>커피-온도 차갑게</Description>
+	    <Value>차갑게</Value>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A005</SerialNumber>
+	    <Description>커피-온도 따뜻하게</Description>
+	    <Value>따뜻하게</Value>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A006</SerialNumber>
+	    <Description>커피-크기 Tall</Description>
+	    <Value>Tall</Value>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A007</SerialNumber>
+	    <Description>커피-크기 Grande</Description>
+	    <Value>Grande</Value>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A008</SerialNumber>
+	    <Description>커피-크기 Venti</Description>
+	    <Value>Venti</Value>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A009</SerialNumber>
+	    <Description>커피-크기 직원에게 문의</Description>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A010</SerialNumber>
+	    <Description>커피를 매장에서 마신다</Description>
+	    <Value>매장에서 마실게요.</Value>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A011</SerialNumber>
+	    <Description>커피를 포장한다</Description>
+	    <Value>포장해주세요.</Value>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A012</SerialNumber>
+	    <Description>음료 추가 주문</Description>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A013</SerialNumber>
+	    <Description>디저트 주문</Description>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A014</SerialNumber>
+	    <Description>주문 마무리</Description>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A015</SerialNumber>
+	    <Description>마카롱 주문</Description>
+	    <Value>마카롱</Value>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A016</SerialNumber>
+	    <Description>케이크 주문</Description>
+	    <Value>케이크</Value>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A017</SerialNumber>
+	    <Description>쿠키 주문</Description>
+	    <Value>쿠키</Value>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A018</SerialNumber>
+	    <Description>디저트를 매장에서 먹는다</Description>
+	    <Value>먹고 갈게요.</Value>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A019</SerialNumber>
+	    <Description>디저트를 포장한다</Description>
+	    <Value>포장해주세요.</Value>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A020</SerialNumber>
+	    <Description>할인카드 있음</Description>
+	    <Value>할인카드</Value>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A021</SerialNumber>
+	    <Description>적립카드 있음</Description>
+	    <Value>적립카드</Value>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A022</SerialNumber>
+	    <Description>할인/적립카드 없음</Description>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A023</SerialNumber>
+	    <Description>직원에게 할인/적립카드 문의</Description>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A024</SerialNumber>
+	    <Description>할인/적립카드 직접 제시</Description>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A025</SerialNumber>
+	    <Description>핸드폰 번호 입력</Description>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A026</SerialNumber>
+	    <Description>지갑에 있는 카드를 하나하나 확인하기</Description>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A027</SerialNumber>
+	    <Description>직원에게 지갑에 있는 카드 다 보여 주기</Description>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A028</SerialNumber>
+	    <Description>다른 손님께 순서를 양보한 뒤에 찾아보기</Description>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+	<Action>
+	    <SerialNumber>A029</SerialNumber>
+	    <Description>할인 또는 적립받지 않기</Description>
+	    <ActorName>김민수</ActorName>
+	    <IsPerformed>false</IsPerformed>
+	</Action>
+</Actions>
