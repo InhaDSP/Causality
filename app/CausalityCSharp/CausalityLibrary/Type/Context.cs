@@ -7,13 +7,13 @@ namespace CausalityLibrary.Type
         public Guid GUID
         { get; }
 
-        public string CurrentScenario
+        public SerialNumber CurrentScenario
         { get; set; }
 
-        public string CurrentScene
+        public SerialNumber CurrentScene
         { get; set; }
 
-        public string CurrentCaption
+        public SerialNumber CurrentCaption
         { get; set; }
 
         public Context(Guid guid)
