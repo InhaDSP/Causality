@@ -9,6 +9,8 @@ namespace CausalityLibrary.Type
         public string Dialogue
         { get; }
 
+        public readonly SerialNumber[] DialogueParameter;
+
         public bool HasCause
         { get; }
 
@@ -30,17 +32,14 @@ namespace CausalityLibrary.Type
         /// <summary>
         /// w.o cause and option
         /// </summary>
-        /// <param name="serialNumber"></param>
-        /// <param name="dialogue"></param>
-        /// <param name="speakerName"></param>
-        /// <param name="nextCaption"></param>
-        /// <param name="displayed"></param>
-        public Caption(SerialNumber serialNumber, string dialogue,
+        public Caption(SerialNumber serialNumber,
+            string dialogue, SerialNumber[] dialogueParameter,
             string speakerName, SerialNumber nextCaption,
             bool displayed = false) 
         {
             SerialNumber = serialNumber;
             Dialogue = dialogue;
+            DialogueParameter = dialogueParameter;
             SpeakerName = speakerName;
             NextCaption = nextCaption;
             Displayed = displayed;
@@ -49,19 +48,14 @@ namespace CausalityLibrary.Type
         /// <summary>
         /// with cause
         /// </summary>
-        /// <param name="serialNumber"></param>
-        /// <param name="dialogue"></param>
-        /// <param name="speakerName"></param>
-        /// <param name="nextCaption"></param>
-        /// <param name="displayed"></param>
-        /// <param name="cause"></param>
-        /// <param name="hasCause"></param>
-        public Caption(SerialNumber serialNumber, string dialogue,
+        public Caption(SerialNumber serialNumber, 
+            string dialogue, SerialNumber[] dialogueParameter,
             string speakerName, SerialNumber nextCaption,
             bool displayed, SerialNumber cause, bool hasCause = true)
         {
             SerialNumber = serialNumber;
             Dialogue = dialogue;
+            DialogueParameter = dialogueParameter;
             SpeakerName = speakerName;
             NextCaption = nextCaption;
             Displayed = displayed;
@@ -72,18 +66,14 @@ namespace CausalityLibrary.Type
         /// <summary>
         /// with option
         /// </summary>
-        /// <param name="serialNumber"></param>
-        /// <param name="dialogue"></param>
-        /// <param name="speakerName"></param>
-        /// <param name="nextCaption"></param>
-        /// <param name="displayed"></param>
-        /// <param name="option"></param>
-        public Caption(SerialNumber serialNumber, string dialogue,
+        public Caption(SerialNumber serialNumber,
+            string dialogue, SerialNumber[] dialogueParameter,
             string speakerName, SerialNumber nextCaption,
             bool displayed, SerialNumber option)
         {
             SerialNumber = serialNumber;
             Dialogue = dialogue;
+            DialogueParameter = dialogueParameter;
             SpeakerName = speakerName;
             NextCaption = nextCaption;
             Displayed = displayed;
@@ -93,19 +83,14 @@ namespace CausalityLibrary.Type
         /// <summary>
         /// with option and cause
         /// </summary>
-        /// <param name="serialNumber"></param>
-        /// <param name="dialogue"></param>
-        /// <param name="speakerName"></param>
-        /// <param name="nextCaption"></param>
-        /// <param name="displayed"></param>
-        /// <param name="cause"></param>
-        /// <param name="option"></param>
-        public Caption(SerialNumber serialNumber, string dialogue,
+        public Caption(SerialNumber serialNumber,
+            string dialogue, SerialNumber[] dialogueParameter,
             string speakerName, SerialNumber nextCaption,
             bool displayed, SerialNumber cause, SerialNumber option)
         {
             SerialNumber = serialNumber;
             Dialogue = dialogue;
+            DialogueParameter = dialogueParameter;
             SpeakerName = speakerName;
             NextCaption = nextCaption;
             Displayed = displayed;

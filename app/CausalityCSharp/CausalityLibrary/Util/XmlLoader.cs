@@ -268,6 +268,7 @@ namespace CausalityLibrary.Util
             {
                 SerialNumber serialNumber = null;
                 string dialogue = string.Empty;
+                SerialNumber[] dialogueParameter = null;
                 SerialNumber cause = null;
                 string speakerName = string.Empty;
                 SerialNumber option = null;
@@ -283,6 +284,14 @@ namespace CausalityLibrary.Util
                             break;
                         case "Dialogue":
                             dialogue = node.InnerText;
+                            break;
+                        case "DialogueParameters":
+                            List<SerialNumber> dialogueParameterList = new List<SerialNumber>();
+                            foreach (XmlNode input in node.ChildNodes)
+                            {
+                                dialogueParameterList.Add(new SerialNumber(input.InnerText));
+                            }
+                            dialogueParameter = dialogueParameterList.ToArray();
                             break;
                         case "Cause":
                             cause = new SerialNumber(node.InnerText);
@@ -301,27 +310,29 @@ namespace CausalityLibrary.Util
                             break;
                     }
                 }
+
                 if ((cause == null) && (option == null))
                 {// without Cause and Option
-                    var caption = new Caption(serialNumber, dialogue, speakerName, nextCaption, displayed);
+                    var caption = new Caption(serialNumber, dialogue, dialogueParameter,
+                        speakerName, nextCaption, displayed);
                     captionList.Add(caption);
                 }
                 else if ((cause != null) && (option == null))
                 {// with Cause, without Option
-                    var caption = new Caption(serialNumber, dialogue, speakerName, nextCaption, displayed,
-                        cause, true);
+                    var caption = new Caption(serialNumber, dialogue, dialogueParameter,
+                        speakerName, nextCaption, displayed, cause, true);
                     captionList.Add(caption);
                 }
                 else if ((cause == null) && (option != null))
                 {// with Option, without Cause
-                    var caption = new Caption(serialNumber, dialogue, speakerName, nextCaption, displayed,
-                        option);
+                    var caption = new Caption(serialNumber, dialogue, dialogueParameter,
+                        speakerName, nextCaption, displayed, option);
                     captionList.Add(caption);
                 }
                 else
                 {// with Cause and Option
-                    var caption = new Caption(serialNumber, dialogue, speakerName, nextCaption, displayed,
-                        cause, option);
+                    var caption = new Caption(serialNumber, dialogue, dialogueParameter,
+                        speakerName, nextCaption, displayed, cause, option);
                     captionList.Add(caption);
                 }
             }

@@ -28,6 +28,9 @@
 	<Caption>
 	  <SerialNumber>CAP003</SerialNumber>
 	  <Dialogue>{0} 주세요.</Dialogue>
+	  <DialogueParameters>
+	  	<DialogueParameter>OPT000</DialogueParameter>
+	  </DialogueParameters>
 	  <HasCause>false</HasCause>
 	  <SpeakerName>김민수</SpeakerName>
 	  <NextCaption>CAP004</NextCaption>
@@ -45,6 +48,9 @@
 	<Caption>
 	  <SerialNumber>CAP005</SerialNumber>
 	  <Dialogue>{0} 주세요.</Dialogue>
+	  <DialogueParameters>
+	  	<DialogueParameter>OPT001</DialogueParameter>
+	  </DialogueParameters>
 	  <HasCause>false</HasCause>
 	  <SpeakerName>김민수</SpeakerName>
 	  <NextCaption>CAP006</NextCaption>
@@ -62,6 +68,9 @@
 	<Caption>
 	  <SerialNumber>CAP007</SerialNumber>
 	  <Dialogue>{0} 사이즈로 주세요.</Dialogue>
+	  <DialogueParameters>
+	  	<DialogueParameter>OPT002</DialogueParameter>
+	  </DialogueParameters>
 	  <HasCause>true</HasCause>
 	  <Cause>CAU000</Cause>
 	  <SpeakerName>김민수</SpeakerName>
@@ -96,6 +105,9 @@
 	<Caption>
 	  <SerialNumber>CAP011</SerialNumber>
 	  <Dialogue>{0}</Dialogue>
+	  <DialogueParameters>
+	  	<DialogueParameter>OPT003</DialogueParameter>
+	  </DialogueParameters>
 	  <HasCause>false</HasCause>
 	  <SpeakerName>김민수</SpeakerName>
 	  <NextCaption>CAP012</NextCaption>
@@ -140,6 +152,9 @@
 	<Caption>
 	  <SerialNumber>CAP016</SerialNumber>
 	  <Dialogue>{0} 주세요.</Dialogue>
+	  <DialogueParameters>
+	  	<DialogueParameter>OPT005</DialogueParameter>
+	  </DialogueParameters>
 	  <HasCause>false</HasCause>
 	  <SpeakerName>김민수</SpeakerName>
 	  <NextCaption>CAP017</NextCaption>
@@ -157,6 +172,9 @@
 	<Caption>
 	  <SerialNumber>CAP018</SerialNumber>
 	  <Dialogue>{0}</Dialogue>
+	  <DialogueParameters>
+	  	<DialogueParameter>OPT006</DialogueParameter>
+	  </DialogueParameters>
 	  <HasCause>false</HasCause>
 	  <SpeakerName>김민수</SpeakerName>
 	  <NextCaption>CAP020</NextCaption>
@@ -182,6 +200,9 @@
 	<Caption>
 	  <SerialNumber>CAP021</SerialNumber>
 	  <Dialogue>{0} 있어요.</Dialogue>
+	  <DialogueParameters>
+	  	<DialogueParameter>OPT007</DialogueParameter>
+	  </DialogueParameters>
 	  <HasCause>true</HasCause>
 	  <Cause>CAU002</Cause>
 	  <SpeakerName>김민수</SpeakerName>
