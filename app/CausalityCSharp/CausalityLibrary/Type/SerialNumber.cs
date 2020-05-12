@@ -62,5 +62,65 @@ namespace CausalityLibrary.Type
         }
 
         private string rawSerial;
+
+        public override bool Equals(object obj)
+        {
+            if (obj is SerialNumber)
+            {
+                return Equals((SerialNumber)obj);
+            }
+            return false;
+        }
+
+        public bool Equals(SerialNumber sn)
+        {
+            // If parameter is null, return false.
+            if (ReferenceEquals(sn, null))
+            {
+                return false;
+            }
+
+            // Optimization for a common success case.
+            if (ReferenceEquals(this, sn))
+            {
+                return true;
+            }
+
+            // If run-time types are not exactly the same, return false.
+            if (GetType() != sn.GetType())
+            {
+                return false;
+            }
+
+            return (Type == sn.Type) && (Index == sn.Index);
+        }
+
+        public override int GetHashCode()
+        {
+            return rawSerial.GetHashCode();
+        }
+
+        public static bool operator ==(SerialNumber lhs, SerialNumber rhs)
+        {
+            // Check for null on left side.
+            if (ReferenceEquals(lhs, null))
+            {
+                if (ReferenceEquals(rhs, null))
+                {
+                    // null == null = true.
+                    return true;
+                }
+
+                // Only the left side is null.
+                return false;
+            }
+            // Equals handles case of null on right side.
+            return lhs.Equals(rhs);
+        }
+
+        public static bool operator !=(SerialNumber lhs, SerialNumber rhs)
+        {
+            return !(lhs.Equals(rhs));
+        }
     }
 }

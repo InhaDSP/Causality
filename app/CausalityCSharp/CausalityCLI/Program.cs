@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using CausalityLibrary.Type;
 using CausalityLibrary.Util;
 
 namespace CausalityCLI
@@ -19,6 +20,11 @@ namespace CausalityCLI
             var scenes      = loader.LoadScene      (rootPath + "scene.xml");
             var scenario    = loader.LoadScenario   (rootPath + "scenario.xml");
             var contexts    = loader.LoadContext    (rootPath + "context.xml");
+
+            //var sn = new SerialNumber("CAP001");
+            //var snhs = sn.GetHashCode();
+            //var hs = captions[1].SerialNumber.GetHashCode();
+            //var eq = captions[1].SerialNumber.Equals(sn);
         }
     }
 }
