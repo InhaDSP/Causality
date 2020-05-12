@@ -9,14 +9,14 @@ namespace CausalityLibrary.Type
         public string Description
         { get; }
 
-        public string Perceptron
+        public SerialNumber Perceptron
         { get; }
 
         public readonly SerialNumber[] Next;
         public readonly double[] Thresholds;
 
         public Cause(SerialNumber serialNumber,
-            string description, string perceptron,
+            string description, SerialNumber perceptron,
             SerialNumber[] next, double[] thresholds)
         {
             SerialNumber = serialNumber;

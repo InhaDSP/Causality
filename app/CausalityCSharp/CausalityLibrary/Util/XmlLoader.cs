@@ -164,7 +164,7 @@ namespace CausalityLibrary.Util
             {
                 SerialNumber serialNumber = null;
                 string description = string.Empty;
-                string preceptron = string.Empty;
+                SerialNumber preceptron = null;
                 var nexts = new List<SerialNumber>();
                 var thresholds = new List<double>();
 
@@ -179,7 +179,7 @@ namespace CausalityLibrary.Util
                             description = node.InnerText;
                             break;
                         case "Preceptron":
-                            preceptron = node.InnerText;
+                            preceptron = new SerialNumber(node.InnerText);
                             break;
                         case "Nexts":
                             foreach (XmlNode next in node.ChildNodes)
@@ -268,9 +268,9 @@ namespace CausalityLibrary.Util
             {
                 SerialNumber serialNumber = null;
                 string dialogue = string.Empty;
-                string cause = string.Empty;
+                SerialNumber cause = null;
                 string speakerName = string.Empty;
-                string option = string.Empty;
+                SerialNumber option = null;
                 SerialNumber nextCaption = null;
                 bool displayed = false;
 
@@ -285,7 +285,7 @@ namespace CausalityLibrary.Util
                             dialogue = node.InnerText;
                             break;
                         case "Cause":
-                            cause = node.InnerText;
+                            cause = new SerialNumber(node.InnerText);
                             break;
                         case "SpeakerName":
                             speakerName = node.InnerText;
@@ -294,25 +294,25 @@ namespace CausalityLibrary.Util
                             nextCaption = new SerialNumber(node.InnerText);
                             break;
                         case "Option":
-                            option = node.InnerText;
+                            option = new SerialNumber(node.InnerText);
                             break;
                         case "Displayed":
                             displayed = bool.Parse(node.InnerText);
                             break;
                     }
                 }
-                if (cause.Equals(string.Empty) && option.Equals(string.Empty))
+                if ((cause == null) && (option == null))
                 {// without Cause and Option
                     var caption = new Caption(serialNumber, dialogue, speakerName, nextCaption, displayed);
                     captionList.Add(caption);
                 }
-                else if (!cause.Equals(string.Empty) && option.Equals(string.Empty))
+                else if ((cause != null) && (option == null))
                 {// with Cause, without Option
                     var caption = new Caption(serialNumber, dialogue, speakerName, nextCaption, displayed,
                         cause, true);
                     captionList.Add(caption);
                 }
-                else if (cause.Equals(string.Empty) && !option.Equals(string.Empty))
+                else if ((cause == null) && (option != null))
                 {// with Option, without Cause
                     var caption = new Caption(serialNumber, dialogue, speakerName, nextCaption, displayed,
                         option);

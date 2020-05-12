@@ -120,7 +120,7 @@ namespace CausalityLibrary.Type
 
         public static bool operator !=(SerialNumber lhs, SerialNumber rhs)
         {
-            return !(lhs.Equals(rhs));
+            return !(lhs == rhs);
         }
     }
 }
