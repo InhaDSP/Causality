@@ -439,9 +439,9 @@ namespace CausalityLibrary.Util
             foreach (XmlNode contextNode in contextNodes)
             {
                 Guid guid = Guid.Empty;
-                string currentScenario = string.Empty;
-                string currentScene = string.Empty;
-                string currentCaption = string.Empty;
+                SerialNumber currentScenario = null;
+                SerialNumber currentScene = null;
+                SerialNumber currentCaption = null;
 
                 foreach (XmlNode node in contextNode.ChildNodes)
                 {
@@ -451,13 +451,13 @@ namespace CausalityLibrary.Util
                             guid = Guid.Parse(node.InnerText);
                             break;
                         case "CurrentScenario":
-                            currentScenario = node.InnerText;
+                            currentScenario = new SerialNumber(node.InnerText);
                             break;
                         case "CurrentScene":
-                            currentScene = node.InnerText;
+                            currentScene = new SerialNumber(node.InnerText);
                             break;
                         case "CurrentCaption":
-                            currentCaption = node.InnerText;
+                            currentCaption = new SerialNumber(node.InnerText);
                             break;
                     }
                 }
