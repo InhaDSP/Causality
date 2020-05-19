@@ -164,7 +164,7 @@ namespace CausalityLibrary.Util
             {
                 SerialNumber serialNumber = null;
                 string description = string.Empty;
-                SerialNumber preceptron = null;
+                SerialNumber perceptron = null;
                 var nexts = new List<SerialNumber>();
                 var thresholds = new List<double>();
 
@@ -178,8 +178,8 @@ namespace CausalityLibrary.Util
                         case "Description":
                             description = node.InnerText;
                             break;
-                        case "Preceptron":
-                            preceptron = new SerialNumber(node.InnerText);
+                        case "Perceptron":
+                            perceptron = new SerialNumber(node.InnerText);
                             break;
                         case "Nexts":
                             foreach (XmlNode next in node.ChildNodes)
@@ -196,7 +196,7 @@ namespace CausalityLibrary.Util
                     }
                 }
                 var cause = new Cause(serialNumber, description,
-                    preceptron, nexts.ToArray(), thresholds.ToArray());
+                    perceptron, nexts.ToArray(), thresholds.ToArray());
 
                 causeList.Add(cause);
             }
