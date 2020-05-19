@@ -10,9 +10,9 @@
 	        <Input>ACT009</Input>
 	    </Inputs>
 	    <Weights>
-	        <Weight>0.5</Weight>
-	        <Weight>0.5</Weight>
-	        <Weight>0.5</Weight>
+	        <Weight>0.6</Weight>
+	        <Weight>0.6</Weight>
+	        <Weight>0.6</Weight>
 	        <Weight>0.0</Weight>
 	    </Weights>
 	    <Bias>0</Bias>
