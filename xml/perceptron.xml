@@ -58,7 +58,7 @@
 	    </Inputs>
 	    <Weights>
 	        <Weight>0.3</Weight>
-	        <Weight>0.5</Weight>
+	        <Weight>0.6</Weight>
 	    </Weights>
 	    <Bias>0</Bias>
 	</Perceptron>
