@@ -3,199 +3,169 @@
 	<Action>
 	    <SerialNumber>ACT000</SerialNumber>
 	    <Description>커피-아메리카노 선택</Description>
-	    <Value>아메리카노</Value>
+	    <DefaultValue>아메리카노</DefaultValue>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT001</SerialNumber>
 	    <Description>커피-카페라떼 선택</Description>
-	    <Value>카페라떼</Value>
+	    <DefaultValue>카페라떼</DefaultValue>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT002</SerialNumber>
 	    <Description>커피-녹차 선택</Description>
-	    <Value>녹차</Value>
+	    <DefaultValue>녹차</DefaultValue>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT003</SerialNumber>
 	    <Description>커피-초코라떼 선택</Description>
-	    <Value>초코라떼</Value>
+	    <DefaultValue>초코라떼</DefaultValue>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT004</SerialNumber>
 	    <Description>커피-온도 차갑게</Description>
-	    <Value>차갑게</Value>
+	    <DefaultValue>차갑게</DefaultValue>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT005</SerialNumber>
 	    <Description>커피-온도 따뜻하게</Description>
-	    <Value>따뜻하게</Value>
+	    <DefaultValue>따뜻하게</DefaultValue>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT006</SerialNumber>
 	    <Description>커피-크기 Tall</Description>
-	    <Value>Tall</Value>
+	    <DefaultValue>Tall</DefaultValue>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT007</SerialNumber>
 	    <Description>커피-크기 Grande</Description>
-	    <Value>Grande</Value>
+	    <DefaultValue>Grande</DefaultValue>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT008</SerialNumber>
 	    <Description>커피-크기 Venti</Description>
-	    <Value>Venti</Value>
+	    <DefaultValue>Venti</DefaultValue>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT009</SerialNumber>
 	    <Description>커피-크기 직원에게 문의</Description>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT010</SerialNumber>
 	    <Description>커피를 매장에서 마신다</Description>
-	    <Value>매장에서 마실게요.</Value>
+	    <DefaultValue>매장에서 마실게요.</DefaultValue>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT011</SerialNumber>
 	    <Description>커피를 포장한다</Description>
-	    <Value>포장해주세요.</Value>
+	    <DefaultValue>포장해주세요.</DefaultValue>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT012</SerialNumber>
 	    <Description>음료 추가 주문</Description>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT013</SerialNumber>
 	    <Description>디저트 주문</Description>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT014</SerialNumber>
 	    <Description>주문 마무리</Description>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT015</SerialNumber>
 	    <Description>마카롱 주문</Description>
-	    <Value>마카롱</Value>
+	    <DefaultValue>마카롱</DefaultValue>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT016</SerialNumber>
 	    <Description>케이크 주문</Description>
-	    <Value>케이크</Value>
+	    <DefaultValue>케이크</DefaultValue>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT017</SerialNumber>
 	    <Description>쿠키 주문</Description>
-	    <Value>쿠키</Value>
+	    <DefaultValue>쿠키</DefaultValue>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT018</SerialNumber>
 	    <Description>디저트를 매장에서 먹는다</Description>
-	    <Value>먹고 갈게요.</Value>
+	    <DefaultValue>먹고 갈게요.</DefaultValue>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT019</SerialNumber>
 	    <Description>디저트를 포장한다</Description>
-	    <Value>포장해주세요.</Value>
+	    <DefaultValue>포장해주세요.</DefaultValue>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT020</SerialNumber>
 	    <Description>할인카드 있음</Description>
-	    <Value>할인카드</Value>
+	    <DefaultValue>할인카드</DefaultValue>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT021</SerialNumber>
 	    <Description>적립카드 있음</Description>
-	    <Value>적립카드</Value>
+	    <DefaultValue>적립카드</DefaultValue>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT022</SerialNumber>
 	    <Description>할인/적립카드 없음</Description>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT023</SerialNumber>
 	    <Description>직원에게 할인/적립카드 문의</Description>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT024</SerialNumber>
 	    <Description>할인/적립카드 직접 제시</Description>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT025</SerialNumber>
 	    <Description>핸드폰 번호 입력</Description>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT026</SerialNumber>
 	    <Description>지갑에 있는 카드를 하나하나 확인하기</Description>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT027</SerialNumber>
 	    <Description>직원에게 지갑에 있는 카드 다 보여 주기</Description>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT028</SerialNumber>
 	    <Description>다른 손님께 순서를 양보한 뒤에 찾아보기</Description>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 	<Action>
 	    <SerialNumber>ACT029</SerialNumber>
 	    <Description>할인 또는 적립받지 않기</Description>
 	    <ActorName>김민수</ActorName>
-	    <IsPerformed>false</IsPerformed>
 	</Action>
 </Actions>

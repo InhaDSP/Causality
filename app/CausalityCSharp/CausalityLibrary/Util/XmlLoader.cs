@@ -56,9 +56,8 @@ namespace CausalityLibrary.Util
             {
                 SerialNumber serialNumber = null;
                 string description = string.Empty;
-                string value = string.Empty;
+                string defaultValue = string.Empty;
                 string actorName = string.Empty;
-                bool isPerformed = false;
 
                 foreach (XmlNode node in actionNode.ChildNodes)
                 {
@@ -70,27 +69,24 @@ namespace CausalityLibrary.Util
                         case "Description":
                             description = node.InnerText;
                             break;
-                        case "Value":
-                            value = node.InnerText;
+                        case "DefaultValue":
+                            defaultValue = node.InnerText;
                             break;
                         case "ActorName":
                             actorName = node.InnerText;
                             break;
-                        case "IsPerformed":
-                            isPerformed = bool.Parse(node.InnerText);
-                            break;
                     }
                 }
-                if (value.Equals(string.Empty))
+                if (defaultValue.Equals(string.Empty))
                 {
                     var action = new Action(
-                    serialNumber, description, actorName, isPerformed);
+                    serialNumber, description, actorName);
                     actionList.Add(action);
                 }
                 else
                 {
                     var action = new Action(
-                    serialNumber, description, actorName, value, isPerformed);
+                    serialNumber, description, actorName, defaultValue);
                     actionList.Add(action);
                 }
             }

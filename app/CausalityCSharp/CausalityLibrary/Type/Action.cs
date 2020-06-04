@@ -1,7 +1,7 @@
 ﻿
 namespace CausalityLibrary.Type
 {
-    public sealed class Action
+    public class Action
     {
         public SerialNumber SerialNumber
         { get; }
@@ -9,7 +9,7 @@ namespace CausalityLibrary.Type
         public string Description
         { get; }
 
-        public string Value
+        public string DefaultValue
         { get; }
 
         public string ActorName
@@ -19,26 +19,16 @@ namespace CausalityLibrary.Type
         { get; set; }
 
         public Action(SerialNumber serialNumber, string description,
-            string actorName, string value, bool isPerformed = false)
+            string actorName, string defaultValue = null)
         {
             SerialNumber = serialNumber;
             Description = description;
-            Value = value;
+            DefaultValue = defaultValue;
             ActorName = actorName;
-            IsPerformed = isPerformed;
-        }
-
-        public Action(SerialNumber serialNumber, string description,
-            string actorName, bool isPerformed = false)
-        {
-            SerialNumber = serialNumber;
-            Description = description;
-            Value = string.Empty;
-            ActorName = actorName;
-            IsPerformed = isPerformed;
+            IsPerformed = false;
         }
 
         // Don't instantiate with default constructor!
-        private Action() { }
+        internal Action() { }
     }
 }
