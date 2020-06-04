@@ -4,6 +4,7 @@
     {
         Role,
         Action,
+        CustomAction,
         Perceptron,
         Cause,
         Option,

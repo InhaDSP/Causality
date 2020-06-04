@@ -31,6 +31,12 @@ namespace CausalityLibrary.Util
             return duplicates;
         }
 
+        public static bool InvalidCustomActions(IEnumerable<Type.CustomAction> customActions)
+        {
+            var duplicates = CheckElements(customActions, (elem => elem.SerialNumber.Index));
+            return duplicates;
+        }
+
         public static bool InvalidPerceptrons(IEnumerable<Perceptron> perceptrons)
         {
             var duplicates = CheckElements(perceptrons, (elem => elem.SerialNumber.Index));

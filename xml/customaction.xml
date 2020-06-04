@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomActions>
+	<CustomAction>
+	    <SerialNumber>CUS000</SerialNumber>
+	    <Description>질문에 대한 대답</Description>
+	    <ActorName>김민수</ActorName>
+	</CustomAction>
+</CustomActions>

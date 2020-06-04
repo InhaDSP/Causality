@@ -97,6 +97,56 @@ namespace CausalityLibrary.Util
             return actionList;
         }
 
+        public List<CustomAction> LoadCustomAction(string filePath)
+        {
+            var rootNode = OpenXml(filePath).LastChild;
+            var customActionNodes = rootNode.ChildNodes;
+            var customActionList = new List<CustomAction>();
+            foreach (XmlNode customActionNode in customActionNodes)
+            {
+                SerialNumber serialNumber = null;
+                string description = string.Empty;
+                string defaultValue = string.Empty;
+                string actorName = string.Empty;
+
+                foreach (XmlNode node in customActionNode.ChildNodes)
+                {
+                    switch (node.Name)
+                    {
+                        case "SerialNumber":
+                            serialNumber = new SerialNumber(node.InnerText);
+                            break;
+                        case "Description":
+                            description = node.InnerText;
+                            break;
+                        case "DefaultValue":
+                            defaultValue = node.InnerText;
+                            break;
+                        case "ActorName":
+                            actorName = node.InnerText;
+                            break;
+                    }
+                }
+                if (defaultValue.Equals(string.Empty))
+                {
+                    var customAction = new CustomAction(
+                    serialNumber, description, actorName);
+                    customActionList.Add(customAction);
+                }
+                else
+                {
+                    var customAction = new CustomAction(
+                    serialNumber, description, actorName, defaultValue);
+                    customActionList.Add(customAction);
+                }
+            }
+            if (Validator.InvalidCustomActions(customActionList))
+            {
+                customActionList = null;
+            }
+            return customActionList;
+        }
+
         public List<Perceptron> LoadPerceptron(string filePath)
         {
             var rootNode = OpenXml(filePath).LastChild;
