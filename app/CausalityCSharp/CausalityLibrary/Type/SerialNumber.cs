@@ -30,6 +30,9 @@ namespace CausalityLibrary.Type
                     case "ACT":
                         Type = TypeEnum.Action;
                         break;
+                    case "CUS":
+                        Type = TypeEnum.CustomAction;
+                        break;
                     case "PER":
                         Type = TypeEnum.Perceptron;
                         break;
