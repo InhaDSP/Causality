@@ -1,6 +1,9 @@
 ﻿
+using System;
+
 namespace CausalityLibrary.Type
 {
+    [Serializable]
     public sealed class Role
     {
         public SerialNumber SerialNumber

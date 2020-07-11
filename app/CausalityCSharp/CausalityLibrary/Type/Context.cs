@@ -2,6 +2,7 @@
 
 namespace CausalityLibrary.Type
 {
+    [Serializable]
     public sealed class Context
     {
         public Guid GUID

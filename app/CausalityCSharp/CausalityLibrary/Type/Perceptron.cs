@@ -1,7 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
 
 namespace CausalityLibrary.Type
 {
+    [Serializable]
     public sealed class Perceptron
     {
         public SerialNumber SerialNumber

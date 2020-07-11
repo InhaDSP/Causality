@@ -1,5 +1,8 @@
-﻿namespace CausalityLibrary.Type
+﻿using System;
+
+namespace CausalityLibrary.Type
 {
+    [Serializable]
     public sealed class Scenario
     {
         public SerialNumber SerialNumber

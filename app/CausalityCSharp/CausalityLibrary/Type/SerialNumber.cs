@@ -4,6 +4,7 @@ using System.Text;
 
 namespace CausalityLibrary.Type
 {
+    [Serializable]
     public class SerialNumber
     {
         public TypeEnum Type

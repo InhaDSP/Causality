@@ -1,17 +1,32 @@
-﻿namespace CausalityLibrary.Type
+﻿using System;
+using System.Runtime.Serialization;
+
+namespace CausalityLibrary.Type
 {
+    [Serializable]
     public enum TypeEnum
     {
+        [EnumMember]
         Role,
+        [EnumMember]
         Action,
+        [EnumMember]
         CustomAction,
+        [EnumMember]
         Perceptron,
+        [EnumMember]
         Cause,
+        [EnumMember]
         Option,
+        [EnumMember]
         Caption,
+        [EnumMember]
         Scene,
+        [EnumMember]
         Scenario,
+        [EnumMember]
         Context,
+        [EnumMember]
         End
     }
 }

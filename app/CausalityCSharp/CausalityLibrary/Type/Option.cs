@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace CausalityLibrary.Type
 {
+    [Serializable]
     public sealed class Option
     {
         public SerialNumber SerialNumber

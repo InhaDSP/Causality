@@ -1,6 +1,8 @@
-﻿
+﻿using System;
+
 namespace CausalityLibrary.Type
 {
+    [Serializable]
     public class Action
     {
         public SerialNumber SerialNumber
