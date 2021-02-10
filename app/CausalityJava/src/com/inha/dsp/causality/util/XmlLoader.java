@@ -3,6 +3,7 @@ package com.inha.dsp.causality.util;
 import com.inha.dsp.causality.type.*;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -31,22 +32,22 @@ public class XmlLoader {
 
     public ArrayList<Role> LoadRole(Document xmlDocument)
     {
-        var roleList = new ArrayList<Role>();
-        var rootNode = xmlDocument.getLastChild();
-        var roleNodes = rootNode.getChildNodes();
+        ArrayList<Role> roleList = new ArrayList<Role>();
+        Node rootNode = xmlDocument.getLastChild();
+        NodeList roleNodes = rootNode.getChildNodes();
         for (int i = 0; i < roleNodes.getLength(); i++) {
             SerialNumber serialNumber = null;
             String name = "";
             PositionEnum position = PositionEnum.Extra;
             String description = "";
 
-            var roleNode = roleNodes.item(i);
+            Node roleNode = roleNodes.item(i);
             if(!roleNode.getNodeName().equals("Role")) {
                 continue;
             }
-            var propertyNodes = roleNode.getChildNodes();
+            NodeList propertyNodes = roleNode.getChildNodes();
             for (int j = 0; j < propertyNodes.getLength(); j++) {
-                var propertyNode = propertyNodes.item(j);
+                Node propertyNode = propertyNodes.item(j);
                 switch (propertyNode.getNodeName())
                 {
                     case "SerialNumber":
@@ -64,7 +65,7 @@ public class XmlLoader {
                 }
             }
 
-            var role = new Role(serialNumber, description, name, position);
+            Role role = new Role(serialNumber, description, name, position);
             roleList.add(role);
         }
         return roleList;
@@ -86,22 +87,22 @@ public class XmlLoader {
     }
     public ArrayList<Action> LoadAction(Document xmlDocument)
     {
-        var actionList = new ArrayList<Action>();
-        var rootNode = xmlDocument.getLastChild();
-        var actionNodes = rootNode.getChildNodes();
+        ArrayList<Action> actionList = new ArrayList<>();
+        Node rootNode = xmlDocument.getLastChild();
+        NodeList actionNodes = rootNode.getChildNodes();
         for (int i = 0; i < actionNodes.getLength(); i++) {
             SerialNumber serialNumber = null;
             String actorName = "";
             String description = "";
             String defaultvalue = "";
 
-            var actionNode = actionNodes.item(i);
+            Node actionNode = actionNodes.item(i);
             if(!actionNode.getNodeName().equals("Action")) {
                 continue;
             }
-            var propertyNodes = actionNode.getChildNodes();
+            NodeList propertyNodes = actionNode.getChildNodes();
             for (int j = 0; j < propertyNodes.getLength(); j++) {
-                var propertyNode = propertyNodes.item(j);
+                Node propertyNode = propertyNodes.item(j);
                 switch (propertyNode.getNodeName())
                 {
                     case "SerialNumber":
@@ -118,7 +119,7 @@ public class XmlLoader {
                         break;
                 }
             }
-            var action = new Action(serialNumber, description, actorName, defaultvalue);
+            Action action = new Action(serialNumber, description, actorName, defaultvalue);
             actionList.add(action);
         }
         return actionList;
@@ -140,22 +141,22 @@ public class XmlLoader {
     }
     public ArrayList<CustomAction> LoadCustomAction(Document xmlDocument)
     {
-        var customActionList = new ArrayList<CustomAction>();
-        var rootNode = xmlDocument.getLastChild();
-        var customActionNodes = rootNode.getChildNodes();
+        ArrayList<CustomAction> customActionList = new ArrayList<>();
+        Node rootNode = xmlDocument.getLastChild();
+        NodeList customActionNodes = rootNode.getChildNodes();
         for (int i = 0; i < customActionNodes.getLength(); i++) {
             SerialNumber serialNumber = null;
             String actorName = "";
             String description = "";
             String defaultvalue = "";
 
-            var customActionNode = customActionNodes.item(i);
+            Node customActionNode = customActionNodes.item(i);
             if(!customActionNode.getNodeName().equals("CustomAction")) {
                 continue;
             }
-            var propertyNodes = customActionNode.getChildNodes();
+            NodeList propertyNodes = customActionNode.getChildNodes();
             for (int j = 0; j < propertyNodes.getLength(); j++) {
-                var propertyNode = propertyNodes.item(j);
+                Node propertyNode = propertyNodes.item(j);
                 switch (propertyNode.getNodeName())
                 {
                     case "SerialNumber":
@@ -172,7 +173,7 @@ public class XmlLoader {
                         break;
                 }
             }
-            var customAction = new CustomAction(serialNumber, description, actorName, defaultvalue);
+            CustomAction customAction = new CustomAction(serialNumber, description, actorName, defaultvalue);
             customActionList.add(customAction);
         }
 
@@ -195,23 +196,23 @@ public class XmlLoader {
     }
     public ArrayList<Perceptron> LoadPerceptron(Document xmlDocument)
     {
-        var perceptronList = new ArrayList<Perceptron>();
-        var rootNode = xmlDocument.getLastChild();
-        var perceptronNodes = rootNode.getChildNodes();
+        ArrayList<Perceptron> perceptronList = new ArrayList<>();
+        Node rootNode = xmlDocument.getLastChild();
+        NodeList perceptronNodes = rootNode.getChildNodes();
         for (int i = 0; i < perceptronNodes.getLength(); i++) {
             SerialNumber serialNumber = null;
             String description = "";
-            var inputs = new ArrayList<SerialNumber>();
-            var weights = new ArrayList<Double>();
+            ArrayList<SerialNumber> inputs = new ArrayList<SerialNumber>();
+            ArrayList<Double> weights = new ArrayList<Double>();
             double bias = 0;
 
-            var perceptronNode = perceptronNodes.item(i);
+            Node perceptronNode = perceptronNodes.item(i);
             if(!perceptronNode.getNodeName().equals("Perceptron")) {
                 continue;
             }
-            var propertyNodes = perceptronNode.getChildNodes();
+            NodeList propertyNodes = perceptronNode.getChildNodes();
             for (int j = 0; j < propertyNodes.getLength(); j++) {
-                var propertyNode = propertyNodes.item(j);
+                Node propertyNode = propertyNodes.item(j);
                 switch (propertyNode.getNodeName())
                 {
                     case "SerialNumber":
@@ -224,7 +225,7 @@ public class XmlLoader {
                         bias = Double.parseDouble(propertyNode.getTextContent());
                         break;
                     case "Inputs":
-                        var inputNodes = propertyNode.getChildNodes();
+                        NodeList inputNodes = propertyNode.getChildNodes();
                         for (int k = 0; k < inputNodes.getLength(); k++) {
                             if(!inputNodes.item(k).getNodeName().equals("Input")) {
                                 continue;
@@ -233,7 +234,7 @@ public class XmlLoader {
                         }
                         break;
                     case "Weights":
-                        var weightNodes = propertyNode.getChildNodes();
+                        NodeList weightNodes = propertyNode.getChildNodes();
                         for (int k = 0; k < weightNodes.getLength(); k++) {
                             if(!weightNodes.item(k).getNodeName().equals("Weight")) {
                                 continue;
@@ -250,7 +251,7 @@ public class XmlLoader {
             for (int j = 0; j < weights.size(); j++) {
                 arrWeights[j] = weights.get(j);
             }
-            var perceptron = new Perceptron(
+            Perceptron perceptron = new Perceptron(
                     serialNumber, description, bias,
                     arrInputs, arrWeights);
             perceptronList.add(perceptron);
@@ -274,23 +275,23 @@ public class XmlLoader {
     }
     public ArrayList<Cause> LoadCause(Document xmlDocument)
     {
-        var causeList = new ArrayList<Cause>();
-        var rootNode = xmlDocument.getLastChild();
-        var causeNodes = rootNode.getChildNodes();
+        ArrayList<Cause> causeList = new ArrayList<Cause>();
+        Node rootNode = xmlDocument.getLastChild();
+        NodeList causeNodes = rootNode.getChildNodes();
         for (int i = 0; i < causeNodes.getLength(); i++) {
             SerialNumber serialNumber = null;
             String description = "";
             SerialNumber perceptron = null;
-            var nexts = new ArrayList<SerialNumber>();
-            var thresholds = new ArrayList<Double>();
+            ArrayList<SerialNumber> nexts = new ArrayList<SerialNumber>();
+            ArrayList<Double> thresholds = new ArrayList<Double>();
 
-            var causeNode = causeNodes.item(i);
+            Node causeNode = causeNodes.item(i);
             if(!causeNode.getNodeName().equals("Cause")) {
                 continue;
             }
-            var propertyNodes = causeNode.getChildNodes();
+            NodeList propertyNodes = causeNode.getChildNodes();
             for (int j = 0; j < propertyNodes.getLength(); j++) {
-                var propertyNode = propertyNodes.item(j);
+                Node propertyNode = propertyNodes.item(j);
                 switch (propertyNode.getNodeName())
                 {
                     case "SerialNumber":
@@ -303,7 +304,7 @@ public class XmlLoader {
                         perceptron = new SerialNumber(propertyNode.getTextContent());
                         break;
                     case "Nexts":
-                        var inputNodes = propertyNode.getChildNodes();
+                        NodeList inputNodes = propertyNode.getChildNodes();
                         for (int k = 0; k < inputNodes.getLength(); k++) {
                             if(!inputNodes.item(k).getNodeName().equals("Next")) {
                                 continue;
@@ -312,7 +313,7 @@ public class XmlLoader {
                         }
                         break;
                     case "Thresholds":
-                        var weightNodes = propertyNode.getChildNodes();
+                        NodeList weightNodes = propertyNode.getChildNodes();
                         for (int k = 0; k < weightNodes.getLength(); k++) {
                             if(!weightNodes.item(k).getNodeName().equals("Threshold")) {
                                 continue;
@@ -329,7 +330,7 @@ public class XmlLoader {
             for (int j = 0; j < thresholds.size(); j++) {
                 arrThresholds[j] = thresholds.get(j);
             }
-            var cause = new Cause(
+            Cause cause = new Cause(
                     serialNumber, description, perceptron,
                     arrNexts, arrThresholds);
             causeList.add(cause);
@@ -353,22 +354,22 @@ public class XmlLoader {
     }
     public ArrayList<Option> LoadOption(Document xmlDocument)
     {
-        var optionList = new ArrayList<Option>();
-        var rootNode = xmlDocument.getLastChild();
-        var optionNodes = rootNode.getChildNodes();
+        ArrayList<Option> optionList = new ArrayList<Option>();
+        Node rootNode = xmlDocument.getLastChild();
+        NodeList optionNodes = rootNode.getChildNodes();
         for (int i = 0; i < optionNodes.getLength(); i++) {
             SerialNumber serialNumber = null;
             String description = "";
-            var actions = new ArrayList<SerialNumber>();
+            ArrayList<SerialNumber> actions = new ArrayList<SerialNumber>();
             boolean isMultiple = false;
 
-            var optionNode = optionNodes.item(i);
+            Node optionNode = optionNodes.item(i);
             if(!optionNode.getNodeName().equals("Option")) {
                 continue;
             }
-            var propertyNodes = optionNode.getChildNodes();
+            NodeList propertyNodes = optionNode.getChildNodes();
             for (int j = 0; j < propertyNodes.getLength(); j++) {
-                var propertyNode = propertyNodes.item(j);
+                Node propertyNode = propertyNodes.item(j);
                 switch (propertyNode.getNodeName())
                 {
                     case "SerialNumber":
@@ -381,7 +382,7 @@ public class XmlLoader {
                         isMultiple = Boolean.parseBoolean(propertyNode.getTextContent());
                         break;
                     case "Actions":
-                        var actionNodes = propertyNode.getChildNodes();
+                        NodeList actionNodes = propertyNode.getChildNodes();
                         for (int k = 0; k < actionNodes.getLength(); k++) {
                             if(!actionNodes.item(k).getNodeName().equals("Action")) {
                                 continue;
@@ -394,7 +395,7 @@ public class XmlLoader {
 
             SerialNumber[] arrActions = new SerialNumber[actions.size()];
             arrActions = actions.toArray(arrActions);
-            var option = new Option(serialNumber, description, arrActions, isMultiple);
+            Option option = new Option(serialNumber, description, arrActions, isMultiple);
             optionList.add(option);
         }
         return optionList;
@@ -416,9 +417,9 @@ public class XmlLoader {
     }
     public ArrayList<Scene> LoadScene(Document xmlDocument)
     {
-        var sceneList = new ArrayList<Scene>();
-        var rootNode = xmlDocument.getLastChild();
-        var sceneNodes = rootNode.getChildNodes();
+        ArrayList<Scene> sceneList = new ArrayList<Scene>();
+        Node rootNode = xmlDocument.getLastChild();
+        NodeList sceneNodes = rootNode.getChildNodes();
         for (int i = 0; i < sceneNodes.getLength(); i++) {
             SerialNumber serialNumber = null;
             String description = "";
@@ -427,13 +428,13 @@ public class XmlLoader {
             boolean displayed = false;
 
 
-            var sceneNode = sceneNodes.item(i);
+            Node sceneNode = sceneNodes.item(i);
             if(!sceneNode.getNodeName().equals("Scene")) {
                 continue;
             }
-            var propertyNodes = sceneNode.getChildNodes();
+            NodeList propertyNodes = sceneNode.getChildNodes();
             for (int j = 0; j < propertyNodes.getLength(); j++) {
-                var propertyNode = propertyNodes.item(j);
+                Node propertyNode = propertyNodes.item(j);
                 switch (propertyNode.getNodeName()) {
                     case "SerialNumber":
                         serialNumber = new SerialNumber(propertyNode.getTextContent());
@@ -454,11 +455,11 @@ public class XmlLoader {
             }
 
             if(cause == null) {
-                var scene = new Scene(
+                Scene scene = new Scene(
                         serialNumber, description, caption, displayed);
                 sceneList.add(scene);
             } else {
-                var scene = new Scene(
+                Scene scene = new Scene(
                         serialNumber, description, caption, cause, displayed);
                 sceneList.add(scene);
             }
@@ -482,22 +483,22 @@ public class XmlLoader {
     }
     public ArrayList<Scenario> LoadScenario(Document xmlDocument)
     {
-        var scenarioList = new ArrayList<Scenario>();
-            var rootNode = xmlDocument.getLastChild();
-            var scenarioNodes = rootNode.getChildNodes();
+        ArrayList<Scenario> scenarioList = new ArrayList<Scenario>();
+            Node rootNode = xmlDocument.getLastChild();
+            NodeList scenarioNodes = rootNode.getChildNodes();
             for (int i = 0; i < scenarioNodes.getLength(); i++) {
                 SerialNumber serialNumber = null;
                 String description = "";
-                var scenes = new ArrayList<SerialNumber>();
+                ArrayList<SerialNumber> scenes = new ArrayList<SerialNumber>();
                 boolean displayed = false;
 
-                var scenarioNode = scenarioNodes.item(i);
+                Node scenarioNode = scenarioNodes.item(i);
                 if(!scenarioNode.getNodeName().equals("Scenario")) {
                     continue;
                 }
-                var propertyNodes = scenarioNode.getChildNodes();
+                NodeList propertyNodes = scenarioNode.getChildNodes();
                 for (int j = 0; j < propertyNodes.getLength(); j++) {
-                    var propertyNode = propertyNodes.item(j);
+                    Node propertyNode = propertyNodes.item(j);
                     switch (propertyNode.getNodeName()) {
                         case "SerialNumber":
                             serialNumber = new SerialNumber(propertyNode.getTextContent());
@@ -509,7 +510,7 @@ public class XmlLoader {
                             displayed = Boolean.parseBoolean(propertyNode.getTextContent());
                             break;
                         case "Scenes":
-                            var sceneNodes = propertyNode.getChildNodes();
+                            NodeList sceneNodes = propertyNode.getChildNodes();
                             for (int k = 0; k < sceneNodes.getLength(); k++) {
                                 if(!sceneNodes.item(k).getNodeName().equals("Scene")) {
                                     continue;
@@ -522,7 +523,7 @@ public class XmlLoader {
 
                 SerialNumber[] arrScenes = new SerialNumber[scenes.size()];
                 arrScenes = scenes.toArray(arrScenes);
-                var scenario = new Scenario(
+                Scenario scenario = new Scenario(
                         serialNumber, description, arrScenes, displayed);
                 scenarioList.add(scenario);
             }
@@ -545,22 +546,22 @@ public class XmlLoader {
     }
     public ArrayList<Context> LoadContext(Document xmlDocument)
     {
-        var contextList = new ArrayList<Context>();
-        var rootNode = xmlDocument.getLastChild();
-        var contextNodes = rootNode.getChildNodes();
+        ArrayList<Context> contextList = new ArrayList<Context>();
+        Node rootNode = xmlDocument.getLastChild();
+        NodeList contextNodes = rootNode.getChildNodes();
         for (int i = 0; i < contextNodes.getLength(); i++) {
             UUID guid = null;
             SerialNumber currentScenario = null;
             SerialNumber currentScene = null;
             SerialNumber currentCaption = null;
 
-            var contextNode = contextNodes.item(i);
+            Node contextNode = contextNodes.item(i);
             if(!contextNode.getNodeName().equals("Context")) {
                 continue;
             }
-            var propertyNodes = contextNode.getChildNodes();
+            NodeList propertyNodes = contextNode.getChildNodes();
             for (int j = 0; j < propertyNodes.getLength(); j++) {
-                var propertyNode = propertyNodes.item(j);
+                Node propertyNode = propertyNodes.item(j);
                 switch (propertyNode.getNodeName()) {
                     case "GUID":
                         guid = UUID.fromString(propertyNode.getTextContent());
@@ -577,7 +578,7 @@ public class XmlLoader {
                 }
             }
 
-            var context = new Context(guid);
+            Context context = new Context(guid);
             context.CurrentScenario = currentScenario;
             context.CurrentScene = currentScene;
             context.CurrentCaption = currentCaption;
@@ -602,26 +603,26 @@ public class XmlLoader {
     }
     public ArrayList<Caption> LoadCaption(Document xmlDocument)
     {
-        var captionList = new ArrayList<Caption>();
-        var rootNode = xmlDocument.getLastChild();
-        var captionNodes = rootNode.getChildNodes();
+        ArrayList<Caption> captionList = new ArrayList<Caption>();
+        Node rootNode = xmlDocument.getLastChild();
+        NodeList captionNodes = rootNode.getChildNodes();
         for (int i = 0; i < captionNodes.getLength(); i++) {
             SerialNumber serialNumber = null;
             String dialogue = "";
-            var dialogueParameter = new ArrayList<SerialNumber>();
+            ArrayList<SerialNumber> dialogueParameter = new ArrayList<SerialNumber>();
             SerialNumber cause = null;
             String speakerName = "";
             SerialNumber option = null;
             SerialNumber nextCaption = null;
             boolean displayed = false;
 
-            var captionNode = captionNodes.item(i);
+            Node captionNode = captionNodes.item(i);
             if(!captionNode.getNodeName().equals("Caption")) {
                 continue;
             }
-            var propertyNodes = captionNode.getChildNodes();
+            NodeList propertyNodes = captionNode.getChildNodes();
             for (int j = 0; j < propertyNodes.getLength(); j++) {
-                var propertyNode = propertyNodes.item(j);
+                Node propertyNode = propertyNodes.item(j);
                 switch (propertyNode.getNodeName()) {
                     case "SerialNumber":
                         serialNumber = new SerialNumber(propertyNode.getTextContent());
@@ -633,7 +634,7 @@ public class XmlLoader {
                         displayed = Boolean.parseBoolean(propertyNode.getTextContent());
                         break;
                     case "DialogueParameters":
-                        var sceneNodes = propertyNode.getChildNodes();
+                        NodeList sceneNodes = propertyNode.getChildNodes();
                         for (int k = 0; k < sceneNodes.getLength(); k++) {
                             if(!sceneNodes.item(k).getNodeName().equals("DialogueParameter")) {
                                 continue;
@@ -660,25 +661,25 @@ public class XmlLoader {
             arrDialogueParameters = dialogueParameter.toArray(arrDialogueParameters);
             if ((cause == null) && (option == null))
             {// without Cause and Option
-                var caption = new Caption(serialNumber, dialogue, arrDialogueParameters,
+                Caption caption = new Caption(serialNumber, dialogue, arrDialogueParameters,
                         speakerName, nextCaption, displayed);
                 captionList.add(caption);
             }
             else if ((cause != null) && (option == null))
             {// with Cause, without Option
-                var caption = new Caption(serialNumber, dialogue, arrDialogueParameters,
+                Caption caption = new Caption(serialNumber, dialogue, arrDialogueParameters,
                         speakerName, nextCaption, displayed, cause, true);
                 captionList.add(caption);
             }
             else if ((cause == null) && (option != null))
             {// with Option, without Cause
-                var caption = new Caption(serialNumber, dialogue, arrDialogueParameters,
+                Caption caption = new Caption(serialNumber, dialogue, arrDialogueParameters,
                         speakerName, nextCaption, displayed, option);
                 captionList.add(caption);
             }
             else
             {// with Cause and Option
-                var caption = new Caption(serialNumber, dialogue, arrDialogueParameters,
+                Caption caption = new Caption(serialNumber, dialogue, arrDialogueParameters,
                         speakerName, nextCaption, displayed, cause, option);
                 captionList.add(caption);
             }

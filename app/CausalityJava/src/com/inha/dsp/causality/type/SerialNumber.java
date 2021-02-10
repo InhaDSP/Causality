@@ -19,7 +19,7 @@ public class SerialNumber {
     public SerialNumber(String fullSerial)
     {
         rawSerial = fullSerial;
-        var classStr = fullSerial.substring(0, 3);
+        String classStr = fullSerial.substring(0, 3);
         if (classStr.equals("END"))
         {
             type = TypeEnum.End;
