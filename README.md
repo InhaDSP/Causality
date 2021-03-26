@@ -1,2 +1,11 @@
 # Causality
-인과를 기반으로 구축한, 시나리오 설계 프로토콜
+Causality is a portable protocol for quickly developing HCI applications for social interactions based on the context through cause and effect.
+
+## Repository information
+- Maintainer: Taein Kim (tikim@dsp.inha.ac.kr)
+- Last document update: Mar 26, 2021
+
+## Development Environment
+- Language: C#, Java
+- IDE: Microsoft Visual Studio(C#), Jetbrains IntelliJ(Java)
+
