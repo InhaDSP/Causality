@@ -1,6 +1,6 @@
 # Causality
 Causality is a portable protocol for quickly developing HCI applications for social interactions based on the context through cause and effect.  
-Detailed proposal of this protocol will be publised as a paper in HCI International 2021. \[Link\]
+Detailed proposal of this protocol will be publishd as a paper in HCI International 2021. \[Link\]
 
 ## Repository information
 - Maintainer: Taein Kim (tikim@dsp.inha.ac.kr)
