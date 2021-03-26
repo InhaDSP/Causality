@@ -5,6 +5,7 @@ Detailed proposal of this protocol will be publishd as a paper in HCI Internatio
 ## Repository information
 - Maintainer: Taein Kim (tikim@dsp.inha.ac.kr)
 - Last document update: Mar 26, 2021
+- License: MIT License
 
 ## Development Environment
 - Language: C#, Java
