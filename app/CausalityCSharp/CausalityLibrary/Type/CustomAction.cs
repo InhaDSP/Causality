@@ -3,7 +3,7 @@
 namespace CausalityLibrary.Type
 {
     [Serializable]
-    public class CustomAction : Action
+    public sealed class CustomAction : Action
     {
         public string CustomValue { get; set; }
 
