@@ -1,6 +1,8 @@
 package com.inha.dsp.causality.type;
 
-public class Cause {
+import java.io.Serializable;
+
+public class Cause implements Serializable {
     private SerialNumber serialNumber;
     private String description;
     private SerialNumber perceptron;

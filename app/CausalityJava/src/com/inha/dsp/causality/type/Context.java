@@ -1,8 +1,9 @@
 package com.inha.dsp.causality.type;
 
+import java.io.Serializable;
 import java.util.UUID;
 
-public class Context {
+public class Context implements Serializable {
     private UUID _guid;
     public UUID getGUID() {
         return _guid;

@@ -1,6 +1,8 @@
 package com.inha.dsp.causality.type;
 
-public class Caption {
+import java.io.Serializable;
+
+public class Caption implements Serializable {
     private SerialNumber serialNumber;
     private String dialogue;
     private boolean _hasCause;

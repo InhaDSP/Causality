@@ -1,8 +1,9 @@
 package com.inha.dsp.causality.type;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Option {
+public class Option implements Serializable {
     private SerialNumber serialNumber;
     private String description;
     private boolean multiple;

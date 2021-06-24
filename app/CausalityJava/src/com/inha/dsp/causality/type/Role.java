@@ -1,6 +1,8 @@
 package com.inha.dsp.causality.type;
 
-public class Role {
+import java.io.Serializable;
+
+public class Role implements Serializable {
     private SerialNumber serialNumber;
     private String description;
     private String name;

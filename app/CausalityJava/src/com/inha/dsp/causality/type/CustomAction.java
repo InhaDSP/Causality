@@ -1,6 +1,8 @@
 package com.inha.dsp.causality.type;
 
-public class CustomAction extends Action {
+import java.io.Serializable;
+
+public class CustomAction extends Action implements Serializable {
     private String customValue;
     public String getCustomValue() {
         return customValue;

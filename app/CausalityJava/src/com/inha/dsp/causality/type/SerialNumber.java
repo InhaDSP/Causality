@@ -1,6 +1,8 @@
 package com.inha.dsp.causality.type;
 
-public class SerialNumber {
+import java.io.Serializable;
+
+public class SerialNumber implements Serializable {
     private TypeEnum type;
     private int index;
     private String rawSerial;

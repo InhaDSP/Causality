@@ -1,6 +1,8 @@
 package com.inha.dsp.causality.type;
 
-public class Scenario {
+import java.io.Serializable;
+
+public class Scenario implements Serializable {
     private SerialNumber serialNumber;
     private String description;
 

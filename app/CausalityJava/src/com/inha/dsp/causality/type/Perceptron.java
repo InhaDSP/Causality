@@ -1,6 +1,8 @@
 package com.inha.dsp.causality.type;
 
-public class Perceptron {
+import java.io.Serializable;
+
+public class Perceptron implements Serializable {
     private SerialNumber serialNumber;
     private String description;
     private double bias;

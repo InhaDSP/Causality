@@ -1,6 +1,8 @@
 package com.inha.dsp.causality.type;
 
-public class Scene {
+import java.io.Serializable;
+
+public class Scene implements Serializable {
     private SerialNumber serialNumber;
     private String description;
     private SerialNumber caption;
