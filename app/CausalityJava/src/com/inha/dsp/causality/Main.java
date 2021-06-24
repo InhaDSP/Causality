@@ -20,6 +20,7 @@ public class Main {
 		ArrayList<Scenario> scenarios = loader.LoadScenario(rootPath + "scenario.xml");
 		ArrayList<Context> contexts = loader.LoadContext(rootPath + "context.xml");
 		ArrayList<Caption> captions = loader.LoadCaption(rootPath + "caption.xml");
+		ArrayList<Media> medias = loader.LoadMedia(rootPath + "media.xml");
 
 		printRoles(roles);
 		printActions(actions);
@@ -31,6 +32,7 @@ public class Main {
 		printScenarios(scenarios);
 		printContexts(contexts);
 		printCaptions(captions);
+		printMedias(medias);
 	}
 
 	private static void printCaptions(java.util.ArrayList<com.inha.dsp.causality.type.Caption> captions) {
@@ -126,6 +128,14 @@ public class Main {
 			System.out.printf("SerialNumber: %s, Name: %s, Description: %s, Position: %s\n",
 					role.getSerialNumber(), role.getName(), role.getDescription(),
 					role.getPosition());
+		}
+	}
+
+	private static void printMedias(java.util.ArrayList<com.inha.dsp.causality.type.Media> medias) {
+		for(Media media: medias) {
+			System.out.printf("SerialNumber: %s, TargetCaption: %s, MediaType: %s, FileName: %s, Thumbnail: %s\n",
+					media.getSerialNumber(), media.getTargetCaption(), media.getMediaType(),
+					media.getFileName(), media.getThumbnail());
 		}
 	}
 }

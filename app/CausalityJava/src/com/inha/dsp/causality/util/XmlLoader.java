@@ -687,6 +687,63 @@ public class XmlLoader {
         return captionList;
     }
 
+    public ArrayList<Media> LoadMedia(String filePath)
+    {
+        Document xmlDocument = null;
+        try {
+            xmlDocument = OpenXml(filePath);
+        } catch (ParserConfigurationException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SAXException e) {
+            e.printStackTrace();
+        }
+        return LoadMedia(xmlDocument);
+    }
+    public ArrayList<Media> LoadMedia(Document xmlDocument)
+    {
+        ArrayList<Media> mediaList = new ArrayList<>();
+        Node rootNode = xmlDocument.getLastChild();
+        NodeList mediaNodes = rootNode.getChildNodes();
+        for (int i = 0; i < mediaNodes.getLength(); i++) {
+            SerialNumber serialNumber = null;
+            SerialNumber targetCaption = null;
+            String mediaType = "";
+            String fileName = "";
+            String thumbnail = "";
+
+            Node mediaNode = mediaNodes.item(i);
+            if(!mediaNode.getNodeName().equals("Media")) {
+                continue;
+            }
+            NodeList propertyNodes = mediaNode.getChildNodes();
+            for (int j = 0; j < propertyNodes.getLength(); j++) {
+                Node propertyNode = propertyNodes.item(j);
+                switch (propertyNode.getNodeName())
+                {
+                    case "SerialNumber":
+                        serialNumber = new SerialNumber(propertyNode.getTextContent());
+                        break;
+                    case "MediaType":
+                        mediaType = propertyNode.getTextContent();
+                        break;
+                    case "FileName":
+                        fileName = propertyNode.getTextContent();
+                        break;
+                    case "TargetCaption":
+                        targetCaption = new SerialNumber(propertyNode.getTextContent());
+                        break;
+                    case "Thumbnail":
+                        thumbnail = propertyNode.getTextContent();
+                }
+            }
+            Media media = new Media(serialNumber, targetCaption, mediaType, fileName, thumbnail);
+            mediaList.add(media);
+        }
+        return mediaList;
+    }
+
     private Document OpenXml(String filePath) throws ParserConfigurationException, IOException, SAXException {
         try {
             File file = new File(filePath);

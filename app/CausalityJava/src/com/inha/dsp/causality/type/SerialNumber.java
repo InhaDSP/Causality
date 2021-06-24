@@ -58,6 +58,8 @@ public class SerialNumber implements Serializable {
                 case "SNR":
                     type = TypeEnum.Scenario;
                     break;
+                case "MED":
+                    type = TypeEnum.Media;
                 default:
                     // Exception?
                     break;
