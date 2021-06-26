@@ -9,6 +9,7 @@ namespace CausalityLibrary.Type
         public readonly string EmotionType; // "3type"(pos/neg/neu), "7type", "av"
         public readonly SerialNumber[] Actions;
         public readonly string[] Emotions;
+        public readonly SerialNumber[] Nexts;
 
         public SerialNumber chosenAction;
         public string EmotionalValue;
@@ -19,7 +20,7 @@ namespace CausalityLibrary.Type
 
         public EmotionalAction(SerialNumber serialNumber, string description,
     string actorName, string mediaType, string emotionType,
-    SerialNumber[] actions, string[] emotions,
+    SerialNumber[] actions, string[] emotions, SerialNumber[] nexts,
     string defaultValue = null)
             : base(serialNumber, description, actorName, defaultValue)
         {
@@ -27,6 +28,7 @@ namespace CausalityLibrary.Type
             EmotionType = emotionType;
             Actions = actions;
             Emotions = emotions;
+            Nexts = nexts;
         }
 
         // Don't instantiate with default constructor!

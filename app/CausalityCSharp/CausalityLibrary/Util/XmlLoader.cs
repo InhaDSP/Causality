@@ -160,10 +160,12 @@ namespace CausalityLibrary.Util
                 string defaultValue = string.Empty;
                 string actorName = string.Empty;
 
-                string mediaType = string.Empty; // XML에 꼭 있어야함
-                string emotionType = string.Empty; // XML에 꼭 있어야함
-                var actions = new List<SerialNumber>(); // XML에 꼭 있어야함
+                // XML에 꼭 있어야함
+                string mediaType = string.Empty; 
+                string emotionType = string.Empty; 
+                var actions = new List<SerialNumber>(); 
                 var emotions = new List<string>();
+                var nexts = new List<SerialNumber>(); 
 
                 foreach (XmlNode node in emotionalActionNode.ChildNodes)
                 {
@@ -199,20 +201,26 @@ namespace CausalityLibrary.Util
                                 emotions.Add(emotion.InnerText);
                             }
                             break;
+                        case "Nexts":
+                            foreach (XmlNode next in node.ChildNodes)
+                            {
+                                nexts.Add(new SerialNumber(next.InnerText));
+                            }
+                            break;
                     }
                 }
                 if (defaultValue.Equals(string.Empty))
                 {
                     var emotionalAction = new EmotionalAction(
                     serialNumber, description, actorName, mediaType, emotionType,
-                    actions.ToArray(), emotions.ToArray());
+                    actions.ToArray(), emotions.ToArray(), nexts.ToArray());
                     emotionalActionList.Add(emotionalAction);
                 }
                 else
                 {
                     var emotionalAction = new EmotionalAction(
                     serialNumber, description, actorName, mediaType, emotionType,
-                    actions.ToArray(), emotions.ToArray(), defaultValue);
+                    actions.ToArray(), emotions.ToArray(), nexts.ToArray(), defaultValue);
                     emotionalActionList.Add(emotionalAction);
                 }
             }
