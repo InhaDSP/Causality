@@ -165,7 +165,6 @@ namespace CausalityLibrary.Util
                 string emotionType = string.Empty; 
                 var actions = new List<SerialNumber>(); 
                 var emotions = new List<string>();
-                var nexts = new List<SerialNumber>(); 
 
                 foreach (XmlNode node in emotionalActionNode.ChildNodes)
                 {
@@ -201,26 +200,20 @@ namespace CausalityLibrary.Util
                                 emotions.Add(emotion.InnerText);
                             }
                             break;
-                        case "Nexts":
-                            foreach (XmlNode next in node.ChildNodes)
-                            {
-                                nexts.Add(new SerialNumber(next.InnerText));
-                            }
-                            break;
                     }
                 }
                 if (defaultValue.Equals(string.Empty))
                 {
                     var emotionalAction = new EmotionalAction(
                     serialNumber, description, actorName, mediaType, emotionType,
-                    actions.ToArray(), emotions.ToArray(), nexts.ToArray());
+                    actions.ToArray(), emotions.ToArray());
                     emotionalActionList.Add(emotionalAction);
                 }
                 else
                 {
                     var emotionalAction = new EmotionalAction(
                     serialNumber, description, actorName, mediaType, emotionType,
-                    actions.ToArray(), emotions.ToArray(), nexts.ToArray(), defaultValue);
+                    actions.ToArray(), emotions.ToArray(), defaultValue);
                     emotionalActionList.Add(emotionalAction);
                 }
             }

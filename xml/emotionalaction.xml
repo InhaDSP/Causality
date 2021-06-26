@@ -9,11 +9,6 @@
 	        <Action>ACT004</Action> <!-- 중립 -->
 			<Action>ACT005</Action> <!-- 긍정적 -->
 		</Actions>
-		<Nexts>
-			<Next>CAP003</Next> <!-- 부정적 -->
-			<Next>CAP009</Next> <!-- 중립 -->
-			<Next>CAP004</Next> <!-- 긍정적 -->
-		</Nexts>
 		<Emotions>
 			<Emotion>negative</Emotion>
 			<Emotion>neutral</Emotion>
@@ -31,11 +26,6 @@
 	        <Action>ACT007</Action> <!-- 중립 -->
 			<Action>ACT008</Action> <!-- 긍정적 -->
 		</Actions>
-		<Nexts>
-			<Next>CAP006</Next> <!-- 부정적 -->
-			<Next>CAP009</Next> <!-- 중립 -->
-			<Next>CAP007</Next> <!-- 긍정적 -->
-		</Nexts>
 		<Emotions>
 			<Emotion>negative</Emotion>
 			<Emotion>neutral</Emotion>
