@@ -13,6 +13,8 @@ namespace CausalityLibrary.Type
         [EnumMember]
         CustomAction,
         [EnumMember]
+        EmotionalAction,
+        [EnumMember]
         Perceptron,
         [EnumMember]
         Cause,

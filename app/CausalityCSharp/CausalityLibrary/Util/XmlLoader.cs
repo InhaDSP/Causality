@@ -147,6 +147,83 @@ namespace CausalityLibrary.Util
             return customActionList;
         }
 
+        public List<EmotionalAction> LoadEmotionalAction(string filePath)
+        {
+            var rootNode = OpenXml(filePath).LastChild;
+            var emotionalActionNodes = rootNode.ChildNodes;
+            var emotionalActionList = new List<EmotionalAction>();
+
+            foreach (XmlNode emotionalActionNode in emotionalActionNodes)
+            {
+                SerialNumber serialNumber = null;
+                string description = string.Empty;
+                string defaultValue = string.Empty;
+                string actorName = string.Empty;
+
+                string mediaType = string.Empty; // XML에 꼭 있어야함
+                string emotionType = string.Empty; // XML에 꼭 있어야함
+                var actions = new List<SerialNumber>(); // XML에 꼭 있어야함
+                var emotions = new List<string>();
+
+                foreach (XmlNode node in emotionalActionNode.ChildNodes)
+                {
+                    switch (node.Name)
+                    {
+                        case "SerialNumber":
+                            serialNumber = new SerialNumber(node.InnerText);
+                            break;
+                        case "Description":
+                            description = node.InnerText;
+                            break;
+                        case "DefaultValue":
+                            defaultValue = node.InnerText;
+                            break;
+                        case "ActorName":
+                            actorName = node.InnerText;
+                            break;
+                        case "MediaType":
+                            mediaType = node.InnerText;
+                            break;
+                        case "EmotionType":
+                            emotionType = node.InnerText;
+                            break;
+                        case "Actions":
+                            foreach (XmlNode action in node.ChildNodes)
+                            {
+                                actions.Add(new SerialNumber(action.InnerText));
+                            }
+                            break;
+                        case "Emotions":
+                            foreach (XmlNode emotion in node.ChildNodes)
+                            {
+                                emotions.Add(emotion.InnerText);
+                            }
+                            break;
+                    }
+                }
+                if (defaultValue.Equals(string.Empty))
+                {
+                    var emotionalAction = new EmotionalAction(
+                    serialNumber, description, actorName, mediaType, emotionType,
+                    actions.ToArray(), emotions.ToArray());
+                    emotionalActionList.Add(emotionalAction);
+                }
+                else
+                {
+                    var emotionalAction = new EmotionalAction(
+                    serialNumber, description, actorName, mediaType, emotionType,
+                    actions.ToArray(), emotions.ToArray(), defaultValue);
+                    emotionalActionList.Add(emotionalAction);
+                }
+            }
+
+            if (Validator.InvalidEmotionalActions(emotionalActionList))
+            {
+                emotionalActionList = null;
+            }
+            return emotionalActionList;
+        }
+
         public List<Perceptron> LoadPerceptron(string filePath)
         {
             var rootNode = OpenXml(filePath).LastChild;

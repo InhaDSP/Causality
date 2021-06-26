@@ -37,6 +37,12 @@ namespace CausalityLibrary.Util
             return duplicates;
         }
 
+        public static bool InvalidEmotionalActions(IEnumerable<Type.EmotionalAction> emotionalActions)
+        {
+            var duplicates = CheckElements(emotionalActions, (elem => elem.SerialNumber.Index));
+            return duplicates;
+        }
+
         public static bool InvalidPerceptrons(IEnumerable<Perceptron> perceptrons)
         {
             var duplicates = CheckElements(perceptrons, (elem => elem.SerialNumber.Index));

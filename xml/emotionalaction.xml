@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EmotionalActions>
+	<EmotionalAction>
+	    <SerialNumber>EMO000</SerialNumber>
+	    <Description>기분 좋았던 일 중에 가장 기억에 남는 일을 말할 때와 말하는 시점의 감정</Description>
+	    <ActorName>나</ActorName>
+		<Actions>
+			<Action>ACT003</Action> <!-- 긍정적 -->
+	        <Action>ACT004</Action> <!-- 부정적 -->
+			<Action>ACT005</Action> <!-- 기타(중립) -->
+		</Actions>
+		<Emotions>
+			<Emotion>positive</Emotion>
+			<Emotion>negative</Emotion>
+			<Emotion>neutral</Emotion>
+		</Emotions>
+	    <MediaType>audio</MediaType>
+		<EmotionType>3type</EmotionType>
+	</EmotionalAction>
+	<EmotionalAction>
+	    <SerialNumber>EMO001</SerialNumber>
+	    <Description>본인을 힘들게 했던 일 중에 가장 기억에 남는 일을 말할 때와 말하는 시점의 감정</Description>
+	    <ActorName>나</ActorName>
+		<Actions>
+			<Action>ACT006</Action> <!-- 긍정적 -->
+	        <Action>ACT007</Action> <!-- 부정적 -->
+			<Action>ACT008</Action> <!-- 기타(중립) -->
+		</Actions>
+		<Emotions>
+			<Emotion>positive</Emotion>
+			<Emotion>negative</Emotion>
+			<Emotion>neutral</Emotion>
+		</Emotions>
+	    <MediaType>audio</MediaType>
+		<EmotionType>3type</EmotionType>
+	</EmotionalAction>
+</EmotionalActions>

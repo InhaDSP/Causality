@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CausalityLibrary.Type
 {
@@ -33,6 +31,9 @@ namespace CausalityLibrary.Type
                         break;
                     case "CUS":
                         Type = TypeEnum.CustomAction;
+                        break;
+                    case "EMO":
+                        Type = TypeEnum.EmotionalAction;
                         break;
                     case "PER":
                         Type = TypeEnum.Perceptron;
