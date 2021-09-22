@@ -53,6 +53,15 @@ namespace CausalityLibrary.Type
                     case "SNR":
                         Type = TypeEnum.Scenario;
                         break;
+                    case "SCO":
+                        Type = TypeEnum.Score;
+                        break;
+                    case "ESC":
+                        Type = TypeEnum.EmotionScore;
+                        break;
+                    case "SCF":
+                        Type = TypeEnum.ScoreFeedback;
+                        break;
                     default:
                         // Exception?
                         break;

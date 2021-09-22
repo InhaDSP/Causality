@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EmotionScores>
+    <EmotionScore>
+        <SerialNumber>ESC000</SerialNumber>
+	    <Description>범불안장애 검사 진행하는 동안 얻어낸 감정의 비율</Description>
+        <EmotionType>3type</EmotionType>
+        <ObjectEmotions>
+            <ObjectEmotion>negative</ObjectEmotion>
+        </ObjectEmotions>
+        <ScoreRule>EntireEmotionResult</ScoreRule>
+    </EmotionScore>
+</EmotionScores>

@@ -78,5 +78,23 @@ namespace CausalityLibrary.Util
             var duplicates = CheckElements(scenarios, (elem => elem.SerialNumber.Index));
             return duplicates;
         }
+
+        public static bool InvalidScores(IEnumerable<Score> scores)
+        {
+            var duplicates = CheckElements(scores, (elem => elem.SerialNumber.Index));
+            return duplicates;
+        }
+
+        public static bool InvalidEmotionScores(IEnumerable<EmotionScore> emotionscores)
+        {
+            var duplicates = CheckElements(emotionscores, (elem => elem.SerialNumber.Index));
+            return duplicates;
+        }
+
+        public static bool InvalidScoreFeedbacks(IEnumerable<ScoreFeedback> scorefeedbacks)
+        {
+            var duplicates = CheckElements(scorefeedbacks, (elem => elem.SerialNumber.Index));
+            return duplicates;
+        }
     }
 }

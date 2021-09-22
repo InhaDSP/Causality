@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Scores>
+    <Score>
+        <SerialNumber>SCO000</SerialNumber>
+	    <Description>범불안장애 평가할때 쓸 점수 요소</Description>
+        <Objectives>
+            <Objective>ACT006</Objective> <!-- 평소에 걱정이 많다 -->
+            <Objective>ACT009</Objective> <!-- 걱정을 멈추려 해보지 않았다 -->
+            <Objective>ACT010</Objective> <!-- 불안할땐 가만히 있기 힘들다 -->
+            <Objective>ACT012</Objective> <!-- 평소에 편안하게 있기 힘들다 -->
+            <Objective>ACT014</Objective> <!-- 최근에 초조함이나 불안함을 느낀적 있다 -->
+            <Objective>ACT016</Objective> <!-- 일상에서 쉽게 화나 짜증을 낸다 -->
+            <Objective>ACT018</Objective> <!-- 내게도 끔찍한 일이 생길까 두렵다 -->
+        </Objectives>
+        <ScoreRule>SimpleAccumulation</ScoreRule>
+    </Score>
+</Scores>

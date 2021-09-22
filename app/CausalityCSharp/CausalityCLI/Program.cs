@@ -25,6 +25,10 @@ namespace CausalityCLI
             var scenario = loader.LoadScenario(rootPath + "scenario.xml");
             var contexts = loader.LoadContext(rootPath + "context.xml");
 
+            var scores = loader.LoadScore(rootPath + "score.xml");
+            var emotionscores = loader.LoadEmotionScore(rootPath + "emotionscore.xml");
+            var scorefeedbacks = loader.LoadScoreFeedback(rootPath + "scorefeedback.xml");
+
             var a = 1;
             //TestSerialNumber(captions);
             //TestSerialize(actions);

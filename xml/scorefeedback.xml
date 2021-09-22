@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScoreFeedbacks>
+    <ScoreFeedback>
+        <SerialNumber>SCF000</SerialNumber>
+	    <Description>범불안장애 척도</Description>
+        <FeedbackRule>QuantizedClassification</FeedbackRule>
+        <Score>SCO000</Score>
+        <ScoreSteps>
+            <ScoreStep>1</ScoreStep> <!-- 0~1 -->
+            <ScoreStep>3</ScoreStep> <!-- 2~3 -->
+            <ScoreStep>5</ScoreStep> <!-- 4~5 -->
+            <ScoreStep>7</ScoreStep> <!-- 6~7 -->
+        </ScoreSteps>
+        <ScoreMessages>
+            <ScoreMessage>당신은 일반적인 수준의 불안을 경험하고 있습니다. 
+크게 걱정할 필요는 없어요!</ScoreMessage>
+            <ScoreMessage>가벼운 수준의 불안을 경험하고 있네요. 
+일상에서 좀 더 안정을 취할 방법을 찾아보세요!</ScoreMessage>
+            <ScoreMessage>상당한 수준의 불안을 경험하고 있네요. 
+필요 이상의 불안으로 일상에서도 어려움을 겪을 수 있으니 전문가의 도움을 받아보세요!</ScoreMessage>
+            <ScoreMessage>심한 불안을 경험하고 있네요. 
+불안 수준이 매우 높아 일상생활을 정상적으로 수행하기 어려울 것 같습니다. 
+가능한 한 빠른시일 내에 전문가를 통해 상담을 받아보시길 권합니다.</ScoreMessage>
+        </ScoreMessages>
+    </ScoreFeedback>
+        <ScoreFeedback>
+        <SerialNumber>SCF001</SerialNumber>
+	    <Description>범불안장애 감정비율</Description>
+        <FeedbackRule>QuantizedClassification</FeedbackRule>
+        <Score>ESC000</Score>
+        <ScoreSteps>
+            <ScoreStep>30</ScoreStep> <!-- 0~30% -->
+            <ScoreStep>100</ScoreStep> <!-- 30~100% -->
+        </ScoreSteps>
+        <ScoreMessages>
+            <ScoreMessage>오늘 대화를 나누는 동안 전반적으로 편안한 상태였습니다.
+일상에서 불안을 유발하는 상황을 만나더라도 부정적인 정서로부터 회복하는 능력이 탁월할 것 같네요!</ScoreMessage>
+            <ScoreMessage>오늘 대화를 나누는 동안 부정적 정서가 높게 나타났어요!
+긴장을 많이 하거나 조금은 불편한 느낌이 있었던 것 같아요.</ScoreMessage>
+        </ScoreMessages>
+    </ScoreFeedback>
+</ScoreFeedbacks>

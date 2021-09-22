@@ -566,6 +566,156 @@ namespace CausalityLibrary.Util
             return scenarioList;
         }
 
+        public List<Score> LoadScore(string filePath)
+        {
+            var rootNode = OpenXml(filePath).LastChild;
+            var scoreNodes = rootNode.ChildNodes;
+            var scoreList = new List<Score>();
+            foreach (XmlNode scoreNode in scoreNodes)
+            {
+                SerialNumber serialNumber = null;
+                string description = string.Empty;
+                var objectives = new List<SerialNumber>();
+                ScoreRuleEnum scorerule = ScoreRuleEnum.SimpleAccumulation;
+
+                foreach (XmlNode node in scoreNode.ChildNodes)
+                {
+                    switch (node.Name)
+                    {
+                        case "SerialNumber":
+                            serialNumber = new SerialNumber(node.InnerText);
+                            break;
+                        case "Description":
+                            description = node.InnerText;
+                            break;
+                        case "ScoreRule":
+                            scorerule = node.InnerText.toScoreRule();
+                            break;
+                        case "Objectives":
+                            foreach (XmlNode objective in node.ChildNodes)
+                            {
+                                objectives.Add(new SerialNumber(objective.InnerText));
+                            }
+                            break;
+                    }
+                }
+                var score = new Score(serialNumber, description,
+                    scorerule, objectives.ToArray());
+
+                scoreList.Add(score);
+            }
+            if (Validator.InvalidScores(scoreList))
+            {
+                scoreList = null;
+            }
+            return scoreList;
+        }
+
+        public List<EmotionScore> LoadEmotionScore(string filePath)
+        {
+            var rootNode = OpenXml(filePath).LastChild;
+            var emotionScoreNodes = rootNode.ChildNodes;
+            var emotionScoreList = new List<EmotionScore>();
+            foreach (XmlNode scoreNode in emotionScoreNodes)
+            {
+                SerialNumber serialNumber = null;
+                string description = string.Empty;
+                var objectemotions = new List<string>();
+                ScoreRuleEnum scorerule = ScoreRuleEnum.SimpleAccumulation;
+                string emotiontype = string.Empty;
+
+                foreach (XmlNode node in scoreNode.ChildNodes)
+                {
+                    switch (node.Name)
+                    {
+                        case "SerialNumber":
+                            serialNumber = new SerialNumber(node.InnerText);
+                            break;
+                        case "Description":
+                            description = node.InnerText;
+                            break;
+                        case "EmotionType":
+                            emotiontype = node.InnerText;
+                            break;
+                        case "ObjectEmotions":
+                            foreach (XmlNode objectemotion in node.ChildNodes)
+                            {
+                                objectemotions.Add(objectemotion.InnerText);
+                            }
+                            break;
+                        case "ScoreRule":
+                            scorerule = node.InnerText.toScoreRule();
+                            break;
+                    }
+                }
+                var score = new EmotionScore(serialNumber, description,
+                    scorerule, emotiontype, objectemotions.ToArray());
+
+                emotionScoreList.Add(score);
+            }
+            if (Validator.InvalidEmotionScores(emotionScoreList))
+            {
+                emotionScoreList = null;
+            }
+            return emotionScoreList;
+        }
+
+        public List<ScoreFeedback> LoadScoreFeedback(string filePath)
+        {
+            var rootNode = OpenXml(filePath).LastChild;
+            var scoreFeedbackNodes = rootNode.ChildNodes;
+            var scoreFeedbackList = new List<ScoreFeedback>();
+            foreach (XmlNode scoreFeedbackNode in scoreFeedbackNodes)
+            {
+                SerialNumber serialNumber = null;
+                string description = string.Empty;
+                ScoreFeedbackEnum feedbackrule = ScoreFeedbackEnum.QuantizedClassification;
+                SerialNumber score = null;
+                var scoresteps = new List<double>();
+                var scoremessages = new List<string>();
+
+                foreach (XmlNode node in scoreFeedbackNode.ChildNodes)
+                {
+                    switch (node.Name)
+                    {
+                        case "SerialNumber":
+                            serialNumber = new SerialNumber(node.InnerText);
+                            break;
+                        case "Description":
+                            description = node.InnerText;
+                            break;
+                        case "FeedbackRule":
+                            feedbackrule = node.InnerText.toScoreFeedback();
+                            break;
+                        case "Score":
+                            score = new SerialNumber(node.InnerText);
+                            break;
+                        case "ScoreSteps":
+                            foreach (XmlNode scorestep in node.ChildNodes)
+                            {
+                                scoresteps.Add(double.Parse(scorestep.InnerText));
+                            }
+                            break;
+                        case "ScoreMessages":
+                            foreach (XmlNode scoremessage in node.ChildNodes)
+                            {
+                                scoremessages.Add(scoremessage.InnerText);
+                            }
+                            break;
+                    }
+                }
+                var scorefeedback = new ScoreFeedback(serialNumber, description,
+                    feedbackrule, score, scoresteps.ToArray(), scoremessages.ToArray());
+
+                scoreFeedbackList.Add(scorefeedback);
+            }
+            if (Validator.InvalidScoreFeedbacks(scoreFeedbackList))
+            {
+                scoreFeedbackList = null;
+            }
+            return scoreFeedbackList;
+        }
+
         public List<Context> LoadContext(string filePath)
         {
             var rootNode = OpenXml(filePath).LastChild;

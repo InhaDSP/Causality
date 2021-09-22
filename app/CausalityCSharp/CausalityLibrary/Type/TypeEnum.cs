@@ -29,6 +29,12 @@ namespace CausalityLibrary.Type
         [EnumMember]
         Context,
         [EnumMember]
+        Score,
+        [EnumMember]
+        EmotionScore,
+        [EnumMember]
+        ScoreFeedback,
+        [EnumMember]
         End
     }
 }
