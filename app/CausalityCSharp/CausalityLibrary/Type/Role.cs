@@ -18,13 +18,17 @@ namespace CausalityLibrary.Type
         public PositionEnum Position
         { get; }
 
+        public string Voice
+        { get; }
+
         public Role(SerialNumber serialNumber, string description,
-            string name, PositionEnum position)
+            string name, PositionEnum position, string voice)
         {
             SerialNumber = serialNumber;
             Description = description;
             Name = name;
             Position = position;
+            Voice = voice;
         }
 
         // Don't instantiate with default constructor!

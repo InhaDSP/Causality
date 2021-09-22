@@ -19,6 +19,7 @@ namespace CausalityLibrary.Util
                 string name = string.Empty;
                 PositionEnum position = PositionEnum.Extra;
                 string description = string.Empty;
+                string voice = string.Empty;
 
                 foreach (XmlNode node in roleNode.ChildNodes)
                 {
@@ -36,9 +37,12 @@ namespace CausalityLibrary.Util
                         case "Description":
                             description = node.InnerText;
                             break;
+                        case "Voice":
+                            voice = node.InnerText;
+                            break;
                     }
                 }
-                var role = new Role(serialNumber, description, name, position);
+                var role = new Role(serialNumber, description, name, position, voice);
 
                 roleList.Add(role);
             }
