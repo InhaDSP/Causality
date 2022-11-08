@@ -4,7 +4,7 @@ The detailed proposal of this protocol is published as a paper in HCI Internatio
 
 ## Repository information
 - Maintainer: Taein Kim (tikim@dsp.inha.ac.kr)
-- Last document update: Mar 26, 2021
+- Last document update: Jun 21, 2022
 - License: MIT License
 
 ## Development Environment
